@@ -34,7 +34,14 @@ A workshop held at German investigative journalist conference [Netzwerk Recherch
   - Regionale Extrakte
   - Overpass(-Turbo)
   - QuickOSM
-- Copernicus, Landsat https://remotepixel.ca/, https://search.remotepixel.ca/, https://github.com/ungarj/awesome-sentinel-2, https://github.com/attibalazs/awesome-remote-sensing
+- Satellite Data
+  - Copernicus
+  - Landsat
+  - https://remotepixel.ca/
+  - https://search.remotepixel.ca/
+  - https://github.com/ungarj/awesome-sentinel-2
+  - https://github.com/attibalazs/awesome-remote-sensing
+  - https://gijn.org/resources-for-finding-and-using-satellite-images/
 
 
 ## Handling geodata properly (10 min)
