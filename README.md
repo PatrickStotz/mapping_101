@@ -6,6 +6,12 @@ A workshop held at German investigative journalist conference [Netzwerk Recherch
 
 *Interne Notiz: Die grobe Struktur stammt aus unserem Brainstorming. Lasst uns wie geplant versuchen, alles in diesem Repository zu sammeln. Sammlung auf englisch, Workshop dann auf deutsch. Die deutschen Texte zwischendrin sind die Umschreibungen was wir in den Kapiteln grob vor haben. Sollten dann nach und nach verschwinden, wenn wir das hier mit Inhalt füllen.*
 
+## Software Requirements
+To follow along during the workshop, please previously perform the follwing steps:  
+1. **Install QGIS** (Version 3.0 or later). Download and follow instructions [here](https://www.qgis.org/en/site/forusers/download.html). We recommend QGIS Standalone Installer for Windows and QGIS macOS Installer for Mac.  
+2. Once QGIS is running, go to Plugins and Install the **QuickMapServices Plugin**.  
+3. We also recommend **setting the language to English** (Preferences > General). This will make following along and googeling for help a lot easier.  
+
 
 ## Quickstart QGIS (10 min)
 *Wir zeigen die absoluten QGIS basics: Bedienelemente, File-Browser, Plugin-Installation, Info-I, Print composer,...*
