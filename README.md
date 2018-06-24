@@ -33,7 +33,7 @@ To follow along during the workshop, please previously perform the follwing step
 *Hier die häufigsten / nützlichsten Quellen für Datenjournalisten (in Deutschland) aufführen und im Workshop ausschnittsweise zeigen. Am besten thematisch sortiert à la: administrative Grenzen, Luftbilder,OSM...*
 
 - Natural Earth http://www.naturalearthdata.com/
-- BKG
+- BKG http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_user_id=0 
 - TPHH http://suche.transparenz.hamburg.de/ & http://suche.transparenz.hamburg.de/?extras_registerobject_type=geodat
 - OSM
   - Einzelne Features (via Query auf osm.org)
@@ -83,10 +83,14 @@ Try to avoid the Mercator or Galls-Peters projections, their distortions are qui
 #### Map of a specific region
 - http://projectionwizard.org/ -> Then add as custom projection in QGIS
 
-## Chapter 5: Answering spatial questions (15 min)
-*Table join, spatial join, buffer*
+### Non-destructive display of data using filters
 
-Beispiele könnten sein:
-- Zensus Raster -> wie viele Menschen sind von X betroffen
-- Wieviele Ärzte in irgendeinem Bereich
-- Objekte finden auf die “etwas “ zutrifft
+## Chapter 5: Answering spatial questions (15 min)
+*Table join, spatial join, buffer* 
+
+Many people use QGIS to create good-looking static maps. But every user should be mindful that geographic INFORMATIONS systems like QGIS are primarily designed to provide answers to questions about spatial information. In the following we will address and solve these questions in a few small examples:
+
+### How many people are affected by an evacuation?
+
+### How many surveillance cameras are there in Berlin's government district?
+
