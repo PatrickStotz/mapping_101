@@ -125,4 +125,4 @@ In the lower bar QGIS displays a message that 123 cameras have now been selected
 With the help of the buffer function we can enlarge a given geometry evenly. We use a distance of 50 meters around the government district. The result is a new geometry that we can either temporarily keep in QGIS or save as a new geojson.
 ![surveillance_6](./img/5_spatial_questions/buffer.png)
 If we now carry out the spatial selection from the previous step again, the number of cameras recorded increases to 168.
-![surveillance_7](./img/5_spatial_questions/selection_buffer.PNG)
+![surveillance_7](./img/5_spatial_questions/selection_buffered.PNG)
