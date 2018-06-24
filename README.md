@@ -99,8 +99,6 @@ Try to avoid the Mercator or Galls-Peters projections, their distortions are qui
 ### Non-destructive display of data using filters
 
 ## Chapter 5: Answering spatial questions (15 min)
-*Table join, spatial join, buffer* 
-
 Many people use QGIS to create good-looking static maps. But every user should be mindful that geographic INFORMATIONS systems like QGIS are primarily designed to provide answers to questions about spatial information. In the following we will address and solve these questions in a few small examples:
 
 ### What is the spatial distribution of new residential buildings in Germany?
