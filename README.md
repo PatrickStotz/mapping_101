@@ -113,7 +113,7 @@ First, we create a geojson file with the ring of the government district. This i
 #### Extracting surveillance cams from Openstreetmap
 One of my favorite plugins in QGIS is QuickOSM, with which you can very quickly import single features from Openstreetmap into QGIS (hence the very fitting name of the plugin).
 ![surveillance_2](./img/5_spatial_questions/quick_osm.PNG)
-![surveillance_3](./img/5_spatial_questions/district_cams.PNG)
+![surveillance_3](./img/5_spatial_questions/district_cams.png)
 
 #### Select by Location
 In our example, both the government district and the cameras are already stored as Geojson in the folder with the example files. So we can now select the cameras that are inside the government district. For this we use the function "select by location".
@@ -125,4 +125,4 @@ In the lower bar QGIS displays a message that 123 cameras have now been selected
 With the help of the buffer function we can enlarge a given geometry evenly. We use a distance of 50 meters around the government district. The result is a new geometry that we can either temporarily keep in QGIS or save as a new geojson.
 ![surveillance_6](./img/5_spatial_questions/buffer.png)
 If we now carry out the spatial selection from the previous step again, the number of cameras recorded increases to 168.
-![surveillance_7](./img/5_spatial_questions/selection_normal.PNG)
+![surveillance_7](./img/5_spatial_questions/selection_buffer.PNG)
