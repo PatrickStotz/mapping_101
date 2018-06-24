@@ -20,7 +20,7 @@
     <customproperties/>
     <layer-tree-group checked="Qt::Checked" name="Question_1: Surveillance in Berlin" expanded="1">
       <customproperties/>
-      <layer-tree-layer providerKey="ogr" checked="Qt::Unchecked" name="berlin_cams berlin_kameras" source="../data/geojson/berlin_cams.geojson" id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" expanded="1">
+      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="berlin_cams berlin_kameras" source="../data/geojson/berlin_cams.geojson" id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" expanded="1">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="berlin_governmental_area berlin_bannmeile" source="../data/geojson/berlin_governmental_area.geojson" id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40" expanded="1">
@@ -73,9 +73,9 @@
   </mapcanvas>
   <legend updateDrawingOrder="true">
     <legendgroup checked="Qt::Checked" name="Question_1: Surveillance in Berlin" open="true">
-      <legendlayer checked="Qt::Unchecked" name="berlin_cams berlin_kameras" showFeatureCount="0" open="true" drawingOrder="-1">
+      <legendlayer checked="Qt::Checked" name="berlin_cams berlin_kameras" showFeatureCount="0" open="true" drawingOrder="-1">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" visible="0" layerid="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8"/>
+          <legendlayerfile isInOverview="0" visible="1" layerid="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8"/>
         </filegroup>
       </legendlayer>
       <legendlayer checked="Qt::Checked" name="berlin_governmental_area berlin_bannmeile" showFeatureCount="0" open="true" drawingOrder="-1">
@@ -1241,7 +1241,7 @@ def my_form_open(dialog, layer, feature):
   <transformContext/>
   <Annotations/>
   <Layouts>
-    <Layout worldFileMap="{ff341240-5616-4ae9-b634-0a72169cf4ef}" name="berlin" printResolution="150" units="mm">
+    <Layout worldFileMap="{ff341240-5616-4ae9-b634-0a72169cf4ef}" name="berlin" printResolution="300" units="mm">
       <Snapper snapToItems="1" tolerance="5" snapToGrid="0" snapToGuides="1"/>
       <Grid resUnits="mm" offsetUnits="mm" resolution="10" offsetY="0" offsetX="0"/>
       <PageCollection>
@@ -1302,12 +1302,6 @@ def my_form_open(dialog, layer, feature):
       </LayoutItem>
       <customproperties>
         <property value="png" key="atlasRasterFormat"/>
-        <property value="true" key="imageAntialias"/>
-        <property value="0" key="imageCropMarginBottom"/>
-        <property value="0" key="imageCropMarginLeft"/>
-        <property value="0" key="imageCropMarginRight"/>
-        <property value="0" key="imageCropMarginTop"/>
-        <property value="false" key="imageCropToContents"/>
       </customproperties>
       <Atlas coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber" pageNameExpression="" enabled="0" hideCoverage="0" filterFeatures="0" sortFeatures="0"/>
     </Layout>
