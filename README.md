@@ -4,17 +4,28 @@ A workshop held at German investigative journalist conference [Netzwerk Recherch
 
 **This document is very much work in progress - come back at the end of June to see the finished version**
 
-*Interne Notiz: Die grobe Struktur stammt aus unserem Brainstorming. Lasst uns wie geplant versuchen, alles in diesem Repository zu sammeln. Sammlung auf englisch, Workshop dann auf deutsch. Die deutschen Texte zwischendrin sind die Umschreibungen was wir in den Kapiteln grob vor haben. Sollten dann nach und nach verschwinden, wenn wir das hier mit Inhalt füllen.*
 
 ## Software Requirements
 To follow along during the workshop, please previously perform the follwing steps:  
 1. **Install QGIS** (Version 3.0 or later). Download and follow instructions [here](https://www.qgis.org/en/site/forusers/download.html). We recommend QGIS Standalone Installer for Windows and QGIS macOS Installer for Mac.  
-2. Once QGIS is running, go to Plugins and Install the **QuickMapServices Plugin**.  
+2. Once QGIS is running, go to Plugins and Install these Plugins: **QuickMapServices** and **QuickOSM**.  
 3. We also recommend **setting the language to English** (Preferences > General). This will make following along and googeling for help a lot easier.  
 
 
 ## Quickstart QGIS (10 min)
-*Wir zeigen die absoluten QGIS basics: Bedienelemente, File-Browser, Plugin-Installation, Info-I, Print composer,...*
+
+### The basic QGIS user interface (live demo)
+Showing main components as described in the official [QGIS documentation](https://docs.qgis.org/2.18/en/docs/user_manual/introduction/qgis_gui.html):
+![QGIS GUI](./img/QGIS_GUI.jpg)
+
+### Loading and navigating your first data set (live demo)
+
+1. **Setting up File-Browser:** We're adding our repository to favorite locations
+2. **Loading XXX.geojson:** Simply drag and drop the file to the map view section
+3. **Exploring the data set behind the map:** Open the *attribute table* and explore the fields and values
+4. **Map navigation:** Simple zooming and panning. Zooming to extend, zooming to individual features.
+5. **Exploring map features:** Using the *Identify Features* functionality
+6. **Print Composer:** That's where you'll exort maps (not part of the workshop)
 
 
 ## File formats (15 min)
