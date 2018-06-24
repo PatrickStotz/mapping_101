@@ -13,11 +13,11 @@ To follow along during the workshop, please previously perform the follwing step
 3. We also recommend **setting the language to English** (Preferences > General). This will make following along and googeling for help a lot easier.  
 
 
-## Quickstart QGIS (10 min)
+## Chapter 1: Quickstart QGIS (10 min)
 *Wir zeigen die absoluten QGIS basics: Bedienelemente, File-Browser, Plugin-Installation, Info-I, Print composer,...*
 
 
-## File formats (15 min)
+## Chapter 2: File formats (15 min)
 *Wir sollten ganz kurz erklären, was der Unterschied zwischen Raster- und Vektordaten ist. Am besten anhand von Beispielen/Beispielabbildungen*
 
 *Datentypen, die einem als Datenjournalist häufiger begegnen und wie man sie in QGIS einlädt. Beispiele in einen Repository-Unterordner packen und dann live vorführen*
@@ -29,7 +29,7 @@ To follow along during the workshop, please previously perform the follwing step
 - geotiff
 
 
-## Data sources (10 min)
+## Chapter 3: Data sources (10 min)
 *Hier die häufigsten / nützlichsten Quellen für Datenjournalisten (in Deutschland) aufführen und im Workshop ausschnittsweise zeigen. Am besten thematisch sortiert à la: administrative Grenzen, Luftbilder,OSM...*
 
 - Natural Earth http://www.naturalearthdata.com/
@@ -50,7 +50,7 @@ To follow along during the workshop, please previously perform the follwing step
   - https://gijn.org/resources-for-finding-and-using-satellite-images/
 
 
-## Handling geodata properly (10 min)
+## Chapter 4: Handling geodata properly (10 min)
 *Projektionen, Generalisierung, Dateiformate konvertieren, Geodaten editieren ohne Originaldaten zu zerschießen*
 ### Projections
 Earth is not flat, it's quite spherical. Our maps are usually flat. Projections try to somehow map earth's geography onto a plane (such as a piece of paper or a computer display).
@@ -60,7 +60,10 @@ Earth is not flat, it's quite spherical. Our maps are usually flat. Projections 
 - Depending on the software used, you might be limited in your choices.
 
 #### EPSG Codes
-TODO
+The European Petroleum Survey Group Geodesy (EPSG) was a working group of European oil and gas exploration companies. She created a system of unique key numbers for map projections which are now used as a standard in the exchange of geodata. Even if there is a very large number of EPSG codes you need to know only a few codes by heart (or on a post-it) in daily use as a (European) journalist:
+
+- EPSG 4326 : WGS 84
+- EPSG 3035 : ETRS 59 / LAEA
 
 #### Map of the whole world?
 - Do you need to preserve a certain property (like area or direction)?
@@ -80,7 +83,7 @@ Try to avoid the Mercator or Galls-Peters projections, their distortions are qui
 #### Map of a specific region
 - http://projectionwizard.org/ -> Then add as custom projection in QGIS
 
-## Answering spatial questions (15 min)
+## Chapter 5: Answering spatial questions (15 min)
 *Table join, spatial join, buffer*
 
 Beispiele könnten sein:
