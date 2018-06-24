@@ -30,9 +30,12 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group checked="Qt::Checked" name="Question_Water_Prices_in_Germany" expanded="1">
+    <layer-tree-group checked="Qt::Checked" name="Question_2: New dwellings in Germany" expanded="1">
       <customproperties/>
-      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="VG250_KRS" source="../data/shp/bkg2017/VG250_KRS.shp" id="VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd" expanded="1">
+      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="bautaetigkeit_2015" source="../data/csv/bautaetigkeit_2015.csv" id="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9" expanded="1">
+        <customproperties/>
+      </layer-tree-layer>
+      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="VG250_KRS" source="../data/shp/bkg2017/VG250_KRS.shp" id="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8" expanded="0">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
@@ -44,25 +47,26 @@
       <item>berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8</item>
       <item>berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40</item>
       <item>Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa</item>
-      <item>VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd</item>
+      <item>VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8</item>
+      <item>bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings unit="1" intersection-snapping="0" mode="2" tolerance="12" type="1" enabled="0">
     <individual-layer-settings>
       <layer-setting tolerance="12" type="1" enabled="0" id="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848" units="1"/>
       <layer-setting tolerance="12" type="1" enabled="0" id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" units="1"/>
+      <layer-setting tolerance="12" type="1" enabled="0" id="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8" units="1"/>
       <layer-setting tolerance="12" type="1" enabled="0" id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40" units="1"/>
-      <layer-setting tolerance="12" type="1" enabled="0" id="VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd" units="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>3990780.53640591539442539</xmin>
-      <ymin>2662011.99770499113947153</ymin>
-      <xmax>4719835.47060486488044262</xmax>
-      <ymax>3588175.99894861411303282</ymax>
+      <xmin>4009167.77388558629900217</xmin>
+      <ymin>2658534.4823582386597991</ymin>
+      <xmax>4694633.01704621594399214</xmax>
+      <ymax>3575653.23169759940356016</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -97,10 +101,15 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup checked="Qt::Checked" name="Question_Water_Prices_in_Germany" open="true">
-      <legendlayer checked="Qt::Checked" name="VG250_KRS" showFeatureCount="0" open="true" drawingOrder="-1">
+    <legendgroup checked="Qt::Checked" name="Question_2: New dwellings in Germany" open="true">
+      <legendlayer checked="Qt::Checked" name="bautaetigkeit_2015" showFeatureCount="0" open="true" drawingOrder="-1">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" visible="1" layerid="VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd"/>
+          <legendlayerfile isInOverview="0" visible="1" layerid="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9"/>
+        </filegroup>
+      </legendlayer>
+      <legendlayer checked="Qt::Checked" name="VG250_KRS" showFeatureCount="0" open="false" drawingOrder="-1">
+        <filegroup open="false" hidden="false">
+          <legendlayerfile isInOverview="0" visible="1" layerid="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
@@ -198,7 +207,7 @@
         <xmax>921292.37117266817949712</xmax>
         <ymax>6101443.71253280062228441</ymax>
       </extent>
-      <id>VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd</id>
+      <id>VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8</id>
       <datasource>../data/shp/bkg2017/VG250_KRS.shp</datasource>
       <keywordList>
         <value></value>
@@ -237,11 +246,30 @@
             <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
-        <extent/>
+        <extent>
+          <spatial minz="0" dimensions="2" maxz="0" crs="" minx="0" miny="0" maxx="0" maxy="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
         <links/>
       </resourceMetadata>
       <provider encoding="UTF-8">ogr</provider>
-      <vectorjoins/>
+      <vectorjoins>
+        <join joinLayerId="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9" cascadedDelete="0" memoryCache="1" dynamicForm="0" upsertOnEdit="0" targetFieldName="AGS" editable="0" joinFieldName="ags"/>
+      </vectorjoins>
       <layerDependencies/>
       <dataDependencies/>
       <expressionfields/>
@@ -249,19 +277,229 @@
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 forceraster="0" type="singleSymbol" symbollevels="0" enableorderby="0">
+      <renderer-v2 forceraster="0" type="graduatedSymbol" attr="bautaetigkeit_2015_wohnungen" symbollevels="0" graduatedMethod="GraduatedColor" enableorderby="0">
+        <ranges>
+          <range upper="91.000000000000000" lower="0.000000000000000" label=" 0 - 91 " symbol="0" render="true"/>
+          <range upper="150.000000000000000" lower="91.000000000000000" label=" 91 - 150 " symbol="1" render="true"/>
+          <range upper="216.000000000000000" lower="150.000000000000000" label=" 150 - 216 " symbol="2" render="true"/>
+          <range upper="304.000000000000000" lower="216.000000000000000" label=" 216 - 304 " symbol="3" render="true"/>
+          <range upper="374.000000000000000" lower="304.000000000000000" label=" 304 - 374 " symbol="4" render="true"/>
+          <range upper="493.000000000000000" lower="374.000000000000000" label=" 374 - 493 " symbol="5" render="true"/>
+          <range upper="621.000000000000000" lower="493.000000000000000" label=" 493 - 621 " symbol="6" render="true"/>
+          <range upper="800.000000000000000" lower="621.000000000000000" label=" 621 - 800 " symbol="7" render="true"/>
+          <range upper="1108.000000000000000" lower="800.000000000000000" label=" 800 - 1108 " symbol="8" render="true"/>
+          <range upper="8704.000000000000000" lower="1108.000000000000000" label=" 1108 - 8704 " symbol="9" render="true"/>
+        </ranges>
         <symbols>
           <symbol name="0" type="fill" clip_to_extent="1" alpha="1">
             <layer class="SimpleFill" pass="0" locked="0" enabled="1">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="170,29,74,255"/>
+              <prop k="color" v="215,25,28,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
               <prop k="outline_color" v="35,35,35,255"/>
               <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="1" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="232,91,58,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="2" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="249,158,89,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="3" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="254,201,128,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="4" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="255,237,170,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="5" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="237,248,185,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="6" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="199,233,173,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="7" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="157,211,167,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="8" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="100,171,176,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol name="9" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="43,131,186,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
               <data_defined_properties>
@@ -274,184 +512,256 @@
             </layer>
           </symbol>
         </symbols>
+        <source-symbol>
+          <symbol name="0" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="168,214,81,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </source-symbol>
+        <colorramp name="[source]" type="gradient">
+          <prop k="color1" v="215,25,28,255"/>
+          <prop k="color2" v="43,131,186,255"/>
+          <prop k="discrete" v="0"/>
+          <prop k="rampType" v="gradient"/>
+          <prop k="stops" v="0.25;253,174,97,255:0.5;255,255,191,255:0.75;171,221,164,255"/>
+        </colorramp>
+        <mode name="quantile"/>
         <rotation/>
         <sizescale/>
+        <labelformat trimtrailingzeroes="false" format=" %1 - %2 " decimalplaces="0"/>
       </renderer-v2>
-      <customproperties/>
-      <blendMode>0</blendMode>
+      <customproperties>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>6</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory maxScaleDenominator="1e+8" minScaleDenominator="0" backgroundColor="#ffffff" width="15" height="15" minimumSize="0" penAlpha="255" labelPlacementMethod="XHeight" barWidth="5" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" scaleDependency="Area" sizeType="MM" enabled="0" rotationOffset="270" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
+          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings placement="0" priority="0" dist="0" zIndex="0" obstacle="0" showAll="1" linePlacementFlags="18">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
       <fieldConfiguration>
         <field name="ADE">
-          <editWidget type="">
+          <editWidget type="Range">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="GF">
-          <editWidget type="">
+          <editWidget type="Range">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="BSG">
-          <editWidget type="">
+          <editWidget type="Range">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="RS">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="AGS">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="SDV_RS">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="GEN">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="BEZ">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="IBZ">
-          <editWidget type="">
+          <editWidget type="Range">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="BEM">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="NBD">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="SN_L">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="SN_R">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="SN_K">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="SN_V1">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="SN_V2">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="SN_G">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="FK_S3">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="NUTS">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="RS_0">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="AGS_0">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="WSK">
-          <editWidget type="">
+          <editWidget type="DateTime">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="EWZ">
-          <editWidget type="">
+          <editWidget type="Range">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="KFL">
-          <editWidget type="">
+          <editWidget type="TextEdit">
             <config>
               <Option/>
             </config>
           </editWidget>
         </field>
         <field name="DEBKG_ID">
-          <editWidget type="">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="bautaetigkeit_2015_gen">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="bautaetigkeit_2015_gebaeude">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="bautaetigkeit_2015_wohnungen">
+          <editWidget type="Range">
             <config>
               <Option/>
             </config>
@@ -484,6 +794,9 @@
         <alias name="" field="EWZ" index="22"/>
         <alias name="" field="KFL" index="23"/>
         <alias name="" field="DEBKG_ID" index="24"/>
+        <alias name="" field="bautaetigkeit_2015_gen" index="25"/>
+        <alias name="" field="bautaetigkeit_2015_gebaeude" index="26"/>
+        <alias name="" field="bautaetigkeit_2015_wohnungen" index="27"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -513,6 +826,9 @@
         <default applyOnUpdate="0" field="EWZ" expression=""/>
         <default applyOnUpdate="0" field="KFL" expression=""/>
         <default applyOnUpdate="0" field="DEBKG_ID" expression=""/>
+        <default applyOnUpdate="0" field="bautaetigkeit_2015_gen" expression=""/>
+        <default applyOnUpdate="0" field="bautaetigkeit_2015_gebaeude" expression=""/>
+        <default applyOnUpdate="0" field="bautaetigkeit_2015_wohnungen" expression=""/>
       </defaults>
       <constraints>
         <constraint notnull_strength="0" constraints="0" unique_strength="0" field="ADE" exp_strength="0"/>
@@ -540,6 +856,9 @@
         <constraint notnull_strength="0" constraints="0" unique_strength="0" field="EWZ" exp_strength="0"/>
         <constraint notnull_strength="0" constraints="0" unique_strength="0" field="KFL" exp_strength="0"/>
         <constraint notnull_strength="0" constraints="0" unique_strength="0" field="DEBKG_ID" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_gen" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_gebaeude" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_wohnungen" exp_strength="0"/>
       </constraints>
       <constraintExpressions>
         <constraint field="ADE" desc="" exp=""/>
@@ -567,6 +886,246 @@
         <constraint field="EWZ" desc="" exp=""/>
         <constraint field="KFL" desc="" exp=""/>
         <constraint field="DEBKG_ID" desc="" exp=""/>
+        <constraint field="bautaetigkeit_2015_gen" desc="" exp=""/>
+        <constraint field="bautaetigkeit_2015_gebaeude" desc="" exp=""/>
+        <constraint field="bautaetigkeit_2015_wohnungen" desc="" exp=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column name="ADE" type="field" width="-1" hidden="0"/>
+          <column name="GF" type="field" width="-1" hidden="0"/>
+          <column name="BSG" type="field" width="-1" hidden="0"/>
+          <column name="RS" type="field" width="-1" hidden="0"/>
+          <column name="AGS" type="field" width="-1" hidden="0"/>
+          <column name="SDV_RS" type="field" width="-1" hidden="0"/>
+          <column name="GEN" type="field" width="-1" hidden="0"/>
+          <column name="BEZ" type="field" width="-1" hidden="0"/>
+          <column name="IBZ" type="field" width="-1" hidden="0"/>
+          <column name="BEM" type="field" width="-1" hidden="0"/>
+          <column name="NBD" type="field" width="-1" hidden="0"/>
+          <column name="SN_L" type="field" width="-1" hidden="0"/>
+          <column name="SN_R" type="field" width="-1" hidden="0"/>
+          <column name="SN_K" type="field" width="-1" hidden="0"/>
+          <column name="SN_V1" type="field" width="-1" hidden="0"/>
+          <column name="SN_V2" type="field" width="-1" hidden="0"/>
+          <column name="SN_G" type="field" width="-1" hidden="0"/>
+          <column name="FK_S3" type="field" width="-1" hidden="0"/>
+          <column name="NUTS" type="field" width="-1" hidden="0"/>
+          <column name="RS_0" type="field" width="-1" hidden="0"/>
+          <column name="AGS_0" type="field" width="-1" hidden="0"/>
+          <column name="WSK" type="field" width="-1" hidden="0"/>
+          <column name="EWZ" type="field" width="-1" hidden="0"/>
+          <column name="KFL" type="field" width="-1" hidden="0"/>
+          <column name="DEBKG_ID" type="field" width="-1" hidden="0"/>
+          <column name="bautaetigkeit_2015_gen" type="field" width="-1" hidden="0"/>
+          <column name="bautaetigkeit_2015_gebaeude" type="field" width="-1" hidden="0"/>
+          <column name="bautaetigkeit_2015_wohnungen" type="field" width="-1" hidden="0"/>
+          <column type="actions" width="-1" hidden="1"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="ADE" editable="1"/>
+        <field name="AGS" editable="1"/>
+        <field name="AGS_0" editable="1"/>
+        <field name="BEM" editable="1"/>
+        <field name="BEZ" editable="1"/>
+        <field name="BSG" editable="1"/>
+        <field name="DEBKG_ID" editable="1"/>
+        <field name="EWZ" editable="1"/>
+        <field name="FK_S3" editable="1"/>
+        <field name="GEN" editable="1"/>
+        <field name="GF" editable="1"/>
+        <field name="IBZ" editable="1"/>
+        <field name="KFL" editable="1"/>
+        <field name="NBD" editable="1"/>
+        <field name="NUTS" editable="1"/>
+        <field name="RS" editable="1"/>
+        <field name="RS_0" editable="1"/>
+        <field name="SDV_RS" editable="1"/>
+        <field name="SN_G" editable="1"/>
+        <field name="SN_K" editable="1"/>
+        <field name="SN_L" editable="1"/>
+        <field name="SN_R" editable="1"/>
+        <field name="SN_V1" editable="1"/>
+        <field name="SN_V2" editable="1"/>
+        <field name="WSK" editable="1"/>
+        <field name="bautaetigkeit_2015_gebaeude" editable="0"/>
+        <field name="bautaetigkeit_2015_gen" editable="0"/>
+        <field name="bautaetigkeit_2015_wohnungen" editable="0"/>
+      </editable>
+      <labelOnTop>
+        <field name="ADE" labelOnTop="0"/>
+        <field name="AGS" labelOnTop="0"/>
+        <field name="AGS_0" labelOnTop="0"/>
+        <field name="BEM" labelOnTop="0"/>
+        <field name="BEZ" labelOnTop="0"/>
+        <field name="BSG" labelOnTop="0"/>
+        <field name="DEBKG_ID" labelOnTop="0"/>
+        <field name="EWZ" labelOnTop="0"/>
+        <field name="FK_S3" labelOnTop="0"/>
+        <field name="GEN" labelOnTop="0"/>
+        <field name="GF" labelOnTop="0"/>
+        <field name="IBZ" labelOnTop="0"/>
+        <field name="KFL" labelOnTop="0"/>
+        <field name="NBD" labelOnTop="0"/>
+        <field name="NUTS" labelOnTop="0"/>
+        <field name="RS" labelOnTop="0"/>
+        <field name="RS_0" labelOnTop="0"/>
+        <field name="SDV_RS" labelOnTop="0"/>
+        <field name="SN_G" labelOnTop="0"/>
+        <field name="SN_K" labelOnTop="0"/>
+        <field name="SN_L" labelOnTop="0"/>
+        <field name="SN_R" labelOnTop="0"/>
+        <field name="SN_V1" labelOnTop="0"/>
+        <field name="SN_V2" labelOnTop="0"/>
+        <field name="WSK" labelOnTop="0"/>
+        <field name="bautaetigkeit_2015_gebaeude" labelOnTop="0"/>
+        <field name="bautaetigkeit_2015_gen" labelOnTop="0"/>
+        <field name="bautaetigkeit_2015_wohnungen" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression>DEBKG_ID</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer readOnly="0" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="No geometry">
+      <id>bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9</id>
+      <datasource>../data/csv/bautaetigkeit_2015.csv</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>bautaetigkeit_2015</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <customproperties/>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <fieldConfiguration>
+        <field name="ags">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gen">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gebaeude">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wohnungen">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" field="ags" index="0"/>
+        <alias name="" field="gen" index="1"/>
+        <alias name="" field="gebaeude" index="2"/>
+        <alias name="" field="wohnungen" index="3"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" field="ags" expression=""/>
+        <default applyOnUpdate="0" field="gen" expression=""/>
+        <default applyOnUpdate="0" field="gebaeude" expression=""/>
+        <default applyOnUpdate="0" field="wohnungen" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="ags" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="gen" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="gebaeude" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="wohnungen" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="ags" desc="" exp=""/>
+        <constraint field="gen" desc="" exp=""/>
+        <constraint field="gebaeude" desc="" exp=""/>
+        <constraint field="wohnungen" desc="" exp=""/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
@@ -1616,7 +2175,8 @@ def my_form_open(dialog, layer, feature):
     <layer id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8"/>
     <layer id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40"/>
     <layer id="Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa"/>
-    <layer id="VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd"/>
+    <layer id="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8"/>
+    <layer id="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9"/>
   </layerorder>
   <properties>
     <Paths>

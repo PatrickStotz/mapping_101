@@ -18,7 +18,7 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-group checked="Qt::Checked" name="Question_1: Surveillance in Berlin" expanded="1">
+    <layer-tree-group checked="Qt::Unchecked" name="Question_1: Surveillance in Berlin" expanded="0">
       <customproperties/>
       <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="berlin_cams berlin_kameras" source="../data/geojson/berlin_cams.geojson" id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" expanded="1">
         <customproperties/>
@@ -30,6 +30,12 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
+    <layer-tree-group checked="Qt::Checked" name="Question_Water_Prices_in_Germany" expanded="1">
+      <customproperties/>
+      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="VG250_KRS" source="../data/shp/bkg2017/VG250_KRS.shp" id="VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd" expanded="1">
+        <customproperties/>
+      </layer-tree-layer>
+    </layer-tree-group>
     <layer-tree-layer providerKey="wms" checked="Qt::Checked" name="Positron [no labels]" source="type=xyz&amp;zmin=0&amp;zmax=20&amp;url=http://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png" id="Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa" expanded="1">
       <customproperties/>
     </layer-tree-layer>
@@ -38,6 +44,7 @@
       <item>berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8</item>
       <item>berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40</item>
       <item>Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa</item>
+      <item>VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings unit="1" intersection-snapping="0" mode="2" tolerance="12" type="1" enabled="0">
@@ -45,16 +52,17 @@
       <layer-setting tolerance="12" type="1" enabled="0" id="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848" units="1"/>
       <layer-setting tolerance="12" type="1" enabled="0" id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" units="1"/>
       <layer-setting tolerance="12" type="1" enabled="0" id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40" units="1"/>
+      <layer-setting tolerance="12" type="1" enabled="0" id="VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd" units="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>4549467.11400782223790884</xmin>
-      <ymin>3272626.625507737044245</ymin>
-      <xmax>4550469.54845415521413088</xmax>
-      <ymax>3273623.23380129085853696</ymax>
+      <xmin>3990780.53640591539442539</xmin>
+      <ymin>2662011.99770499113947153</ymin>
+      <xmax>4719835.47060486488044262</xmax>
+      <ymax>3588175.99894861411303282</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -72,20 +80,27 @@
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
   <legend updateDrawingOrder="true">
-    <legendgroup checked="Qt::Checked" name="Question_1: Surveillance in Berlin" open="true">
+    <legendgroup checked="Qt::Unchecked" name="Question_1: Surveillance in Berlin" open="false">
       <legendlayer checked="Qt::Checked" name="berlin_cams berlin_kameras" showFeatureCount="0" open="true" drawingOrder="-1">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" visible="1" layerid="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8"/>
+          <legendlayerfile isInOverview="0" visible="0" layerid="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8"/>
         </filegroup>
       </legendlayer>
       <legendlayer checked="Qt::Checked" name="berlin_governmental_area berlin_bannmeile" showFeatureCount="0" open="true" drawingOrder="-1">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" visible="1" layerid="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40"/>
+          <legendlayerfile isInOverview="0" visible="0" layerid="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40"/>
         </filegroup>
       </legendlayer>
       <legendlayer checked="Qt::Checked" name="berlin_governmental_area_buffered" showFeatureCount="0" open="true" drawingOrder="-1">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" visible="1" layerid="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848"/>
+          <legendlayerfile isInOverview="0" visible="0" layerid="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848"/>
+        </filegroup>
+      </legendlayer>
+    </legendgroup>
+    <legendgroup checked="Qt::Checked" name="Question_Water_Prices_in_Germany" open="true">
+      <legendlayer checked="Qt::Checked" name="VG250_KRS" showFeatureCount="0" open="true" drawingOrder="-1">
+        <filegroup open="true" hidden="false">
+          <legendlayerfile isInOverview="0" visible="1" layerid="VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
@@ -175,6 +190,407 @@
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer readOnly="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyLocal="1" labelsEnabled="0" maxScale="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" simplifyMaxScale="1" simplifyDrawingHints="1" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Polygon">
+      <extent>
+        <xmin>280371.0591140603646636</xmin>
+        <ymin>5235855.97675701789557934</ymin>
+        <xmax>921292.37117266817949712</xmax>
+        <ymax>6101443.71253280062228441</ymax>
+      </extent>
+      <id>VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd</id>
+      <datasource>../data/shp/bkg2017/VG250_KRS.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>VG250_KRS</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>1009</srsid>
+          <srid>3044</srid>
+          <authid>EPSG:3044</authid>
+          <description>ETRS89 / ETRS-TM32</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+        <links/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 forceraster="0" type="singleSymbol" symbollevels="0" enableorderby="0">
+        <symbols>
+          <symbol name="0" type="fill" clip_to_extent="1" alpha="1">
+            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="170,29,74,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option name="name" type="QString" value=""/>
+                  <Option name="properties"/>
+                  <Option name="type" type="QString" value="collection"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <fieldConfiguration>
+        <field name="ADE">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GF">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BSG">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="RS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AGS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SDV_RS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GEN">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BEZ">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="IBZ">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="BEM">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NBD">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SN_L">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SN_R">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SN_K">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SN_V1">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SN_V2">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SN_G">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FK_S3">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NUTS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="RS_0">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AGS_0">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="WSK">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="EWZ">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="KFL">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="DEBKG_ID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" field="ADE" index="0"/>
+        <alias name="" field="GF" index="1"/>
+        <alias name="" field="BSG" index="2"/>
+        <alias name="" field="RS" index="3"/>
+        <alias name="" field="AGS" index="4"/>
+        <alias name="" field="SDV_RS" index="5"/>
+        <alias name="" field="GEN" index="6"/>
+        <alias name="" field="BEZ" index="7"/>
+        <alias name="" field="IBZ" index="8"/>
+        <alias name="" field="BEM" index="9"/>
+        <alias name="" field="NBD" index="10"/>
+        <alias name="" field="SN_L" index="11"/>
+        <alias name="" field="SN_R" index="12"/>
+        <alias name="" field="SN_K" index="13"/>
+        <alias name="" field="SN_V1" index="14"/>
+        <alias name="" field="SN_V2" index="15"/>
+        <alias name="" field="SN_G" index="16"/>
+        <alias name="" field="FK_S3" index="17"/>
+        <alias name="" field="NUTS" index="18"/>
+        <alias name="" field="RS_0" index="19"/>
+        <alias name="" field="AGS_0" index="20"/>
+        <alias name="" field="WSK" index="21"/>
+        <alias name="" field="EWZ" index="22"/>
+        <alias name="" field="KFL" index="23"/>
+        <alias name="" field="DEBKG_ID" index="24"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" field="ADE" expression=""/>
+        <default applyOnUpdate="0" field="GF" expression=""/>
+        <default applyOnUpdate="0" field="BSG" expression=""/>
+        <default applyOnUpdate="0" field="RS" expression=""/>
+        <default applyOnUpdate="0" field="AGS" expression=""/>
+        <default applyOnUpdate="0" field="SDV_RS" expression=""/>
+        <default applyOnUpdate="0" field="GEN" expression=""/>
+        <default applyOnUpdate="0" field="BEZ" expression=""/>
+        <default applyOnUpdate="0" field="IBZ" expression=""/>
+        <default applyOnUpdate="0" field="BEM" expression=""/>
+        <default applyOnUpdate="0" field="NBD" expression=""/>
+        <default applyOnUpdate="0" field="SN_L" expression=""/>
+        <default applyOnUpdate="0" field="SN_R" expression=""/>
+        <default applyOnUpdate="0" field="SN_K" expression=""/>
+        <default applyOnUpdate="0" field="SN_V1" expression=""/>
+        <default applyOnUpdate="0" field="SN_V2" expression=""/>
+        <default applyOnUpdate="0" field="SN_G" expression=""/>
+        <default applyOnUpdate="0" field="FK_S3" expression=""/>
+        <default applyOnUpdate="0" field="NUTS" expression=""/>
+        <default applyOnUpdate="0" field="RS_0" expression=""/>
+        <default applyOnUpdate="0" field="AGS_0" expression=""/>
+        <default applyOnUpdate="0" field="WSK" expression=""/>
+        <default applyOnUpdate="0" field="EWZ" expression=""/>
+        <default applyOnUpdate="0" field="KFL" expression=""/>
+        <default applyOnUpdate="0" field="DEBKG_ID" expression=""/>
+      </defaults>
+      <constraints>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="ADE" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="GF" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="BSG" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="RS" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="AGS" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SDV_RS" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="GEN" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="BEZ" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="IBZ" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="BEM" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="NBD" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_L" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_R" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_K" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_V1" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_V2" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_G" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="FK_S3" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="NUTS" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="RS_0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="AGS_0" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="WSK" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="EWZ" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="KFL" exp_strength="0"/>
+        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="DEBKG_ID" exp_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint field="ADE" desc="" exp=""/>
+        <constraint field="GF" desc="" exp=""/>
+        <constraint field="BSG" desc="" exp=""/>
+        <constraint field="RS" desc="" exp=""/>
+        <constraint field="AGS" desc="" exp=""/>
+        <constraint field="SDV_RS" desc="" exp=""/>
+        <constraint field="GEN" desc="" exp=""/>
+        <constraint field="BEZ" desc="" exp=""/>
+        <constraint field="IBZ" desc="" exp=""/>
+        <constraint field="BEM" desc="" exp=""/>
+        <constraint field="NBD" desc="" exp=""/>
+        <constraint field="SN_L" desc="" exp=""/>
+        <constraint field="SN_R" desc="" exp=""/>
+        <constraint field="SN_K" desc="" exp=""/>
+        <constraint field="SN_V1" desc="" exp=""/>
+        <constraint field="SN_V2" desc="" exp=""/>
+        <constraint field="SN_G" desc="" exp=""/>
+        <constraint field="FK_S3" desc="" exp=""/>
+        <constraint field="NUTS" desc="" exp=""/>
+        <constraint field="RS_0" desc="" exp=""/>
+        <constraint field="AGS_0" desc="" exp=""/>
+        <constraint field="WSK" desc="" exp=""/>
+        <constraint field="EWZ" desc="" exp=""/>
+        <constraint field="KFL" desc="" exp=""/>
+        <constraint field="DEBKG_ID" desc="" exp=""/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
     </maplayer>
     <maplayer readOnly="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyLocal="1" labelsEnabled="0" maxScale="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" simplifyMaxScale="1" simplifyDrawingHints="0" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Point">
       <extent>
@@ -1200,6 +1616,7 @@ def my_form_open(dialog, layer, feature):
     <layer id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8"/>
     <layer id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40"/>
     <layer id="Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa"/>
+    <layer id="VG250_KRS_7cf44e22_4f9d_45c3_bb0c_e8c86a3cd0bd"/>
   </layerorder>
   <properties>
     <Paths>

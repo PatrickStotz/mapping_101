@@ -103,7 +103,26 @@ Try to avoid the Mercator or Galls-Peters projections, their distortions are qui
 
 Many people use QGIS to create good-looking static maps. But every user should be mindful that geographic INFORMATIONS systems like QGIS are primarily designed to provide answers to questions about spatial information. In the following we will address and solve these questions in a few small examples:
 
-### How many people are affected by an evacuation?
+### What is the spatial distribution of new residential buildings in Germany?
+This is a very common task: It is required to combine statistical data (e.g. from the Federal Statistical Office) with their corresponding geometry and present the result.
+
+#### Loading the input datasets
+We add the two input data sets to our GGIS project, which we want to merge and display together. The Federal Office of Cartography and Geodesy provides a layer with the districts (shapefile) and the Federal Statistical Office a table with the building completions from the year 2015.
+![dwellings_1](./img/5_spatial_questions/counties.PNG)
+
+The districts are simply added by drag & drop (shapefile). However, this is not quite as easy with the csv file. QGIS requires a csvt file to correctly display the data types per column.
+![dwellings_2](./img/5_spatial_questions/csv.PNG)
+![dwellings_3](./img/5_spatial_questions/csv_t.PNG)
+
+#### Creating the join
+The csv file can then be drag & dropped into the project. Now the data from the csv must be linked with the data from the shapefile. Under no circumstances should the name of the municipality be used as a key. There are indeed duplicate church names in Germany. The correct way is the join via the official municipality key (ags).
+![dwellings_4](./img/5_spatial_questions/properties_join.PNG)
+![dwellings_5](./img/5_spatial_questions/properties_join_details.PNG)
+
+#### Coloring the map
+The data from the csv are now linked to the geometries of the shapefile. The display options can now be used to show the intensity of construction activity per county.
+![dwellings_6](./img/5_spatial_questions/color_ramp.PNG)
+![dwellings_6](./img/5_spatial_questions/color_map.PNG)
 
 ### How many surveillance cameras are there in Berlin's government district?
 Of course, one could take a longer walk through the government district to answer this question. However, that would not be really efficient... So we follow a geo-approach by first downloading the input data from Openstreetmap and then spatially filtering them. As a little extra we use the universally loved buffer function.
