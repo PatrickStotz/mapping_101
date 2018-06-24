@@ -12,7 +12,7 @@ To follow along during the workshop, please previously perform the follwing step
 3. We also recommend **setting the language to English** (Preferences > General). This will make following along and googeling for help a lot easier.  
 
 
-## Quickstart QGIS (10 min)
+## Chapter 1: Quickstart QGIS (10 min)
 
 ### The basic QGIS user interface (live demo)
 Showing main components as described in the official [QGIS documentation](https://docs.qgis.org/2.18/en/docs/user_manual/introduction/qgis_gui.html):
@@ -28,7 +28,7 @@ Showing main components as described in the official [QGIS documentation](https:
 6. **Print Composer:** That's where you'll exort maps (not part of the workshop)
 
 
-## File formats (15 min)
+## Chapter 2: File formats (15 min)
 *Wir sollten ganz kurz erklären, was der Unterschied zwischen Raster- und Vektordaten ist. Am besten anhand von Beispielen/Beispielabbildungen*
 
 *Datentypen, die einem als Datenjournalist häufiger begegnen und wie man sie in QGIS einlädt. Beispiele in einen Repository-Unterordner packen und dann live vorführen*
@@ -40,11 +40,11 @@ Showing main components as described in the official [QGIS documentation](https:
 - geotiff
 
 
-## Data sources (10 min)
+## Chapter 3: Data sources (10 min)
 *Hier die häufigsten / nützlichsten Quellen für Datenjournalisten (in Deutschland) aufführen und im Workshop ausschnittsweise zeigen. Am besten thematisch sortiert à la: administrative Grenzen, Luftbilder,OSM...*
 
 - Natural Earth http://www.naturalearthdata.com/
-- BKG
+- BKG http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_user_id=0 
 - TPHH http://suche.transparenz.hamburg.de/ & http://suche.transparenz.hamburg.de/?extras_registerobject_type=geodat
 - OSM
   - Einzelne Features (via Query auf osm.org)
@@ -61,7 +61,7 @@ Showing main components as described in the official [QGIS documentation](https:
   - https://gijn.org/resources-for-finding-and-using-satellite-images/
 
 
-## Handling geodata properly (10 min)
+## Chapter 4: Handling geodata properly (10 min)
 *Projektionen, Generalisierung, Dateiformate konvertieren, Geodaten editieren ohne Originaldaten zu zerschießen*
 ### Projections
 Earth is not flat, it's quite spherical. Our maps are usually flat. Projections try to somehow map earth's geography onto a plane (such as a piece of paper or a computer display).
@@ -71,7 +71,10 @@ Earth is not flat, it's quite spherical. Our maps are usually flat. Projections 
 - Depending on the software used, you might be limited in your choices.
 
 #### EPSG Codes
-TODO
+The European Petroleum Survey Group Geodesy (EPSG) was a working group of European oil and gas exploration companies. She created a system of unique key numbers for map projections which are now used as a standard in the exchange of geodata. Even if there is a very large number of EPSG codes you need to know only a few codes by heart (or on a post-it) in daily use as a (European) journalist:
+
+- EPSG 4326 : WGS 84
+- EPSG 3035 : ETRS 59 / LAEA
 
 #### Map of the whole world?
 - Do you need to preserve a certain property (like area or direction)?
@@ -91,10 +94,14 @@ Try to avoid the Mercator or Galls-Peters projections, their distortions are qui
 #### Map of a specific region
 - http://projectionwizard.org/ -> Then add as custom projection in QGIS
 
-## Answering spatial questions (15 min)
-*Table join, spatial join, buffer*
+### Non-destructive display of data using filters
 
-Beispiele könnten sein:
-- Zensus Raster -> wie viele Menschen sind von X betroffen
-- Wieviele Ärzte in irgendeinem Bereich
-- Objekte finden auf die “etwas “ zutrifft
+## Chapter 5: Answering spatial questions (15 min)
+*Table join, spatial join, buffer* 
+
+Many people use QGIS to create good-looking static maps. But every user should be mindful that geographic INFORMATIONS systems like QGIS are primarily designed to provide answers to questions about spatial information. In the following we will address and solve these questions in a few small examples:
+
+### How many people are affected by an evacuation?
+
+### How many surveillance cameras are there in Berlin's government district?
+
