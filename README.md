@@ -106,4 +106,25 @@ Many people use QGIS to create good-looking static maps. But every user should b
 ### How many people are affected by an evacuation?
 
 ### How many surveillance cameras are there in Berlin's government district?
+Of course, one could take a longer walk through the government district to answer this question. However, that would not be really efficient... So we follow a geo-approach by first downloading the input data from Openstreetmap and then spatially filtering them. As a little extra we use the universally loved buffer function.
 
+#### Creating the government district
+First, we create a geojson file with the ring of the government district. This is a rare case, in which no already finished geodata are used.
+![surveillance_1](./img/5_spatial_questions/district.png)
+
+#### Extracting surveillance cams from Openstreetmap
+One of my favorite plugins in QGIS is QuickOSM, with which you can very quickly import single features from Openstreetmap into QGIS (hence the very fitting name of the plugin).
+![surveillance_2](./img/5_spatial_questions/quick_osm.PNG)
+![surveillance_3](./img/5_spatial_questions/district_cams.png)
+
+#### Select by Location
+In our example, both the government district and the cameras are already stored as Geojson in the folder with the example files. So we can now select the cameras that are inside the government district. For this we use the function "select by location".
+![surveillance_4](./img/5_spatial_questions/select_by_location.png)
+In the lower bar QGIS displays a message that 123 cameras have now been selected. The selection is displayed in yellow. At the same time, however, it becomes clear that many cameras hang directly outside the government quarter.  Actually, one would also like to count them.
+![surveillance_5](./img/5_spatial_questions/selection_normal.PNG)
+
+#### Buffering
+With the help of the buffer function we can enlarge a given geometry evenly. We use a distance of 50 meters around the government district. The result is a new geometry that we can either temporarily keep in QGIS or save as a new geojson.
+![surveillance_6](./img/5_spatial_questions/buffer.png)
+If we now carry out the spatial selection from the previous step again, the number of cameras recorded increases to 168.
+![surveillance_7](./img/5_spatial_questions/selection_buffer.PNG)
