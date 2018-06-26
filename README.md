@@ -16,18 +16,18 @@ To follow along during the workshop, please previously perform the follwing step
 
 ### The basic QGIS user interface (live demo)
 Explaing the main user interface components as described in the official [QGIS documentation](https://docs.qgis.org/2.18/en/docs/user_manual/introduction/qgis_gui.html):
-![QGIS GUI](img/QGIS_GUI.jpg)
+![QGIS GUI](./img/1_quickstart/QGIS_GUI.jpg)
 
 ### Loading and navigating your first data set (live demo)
 
 1. **Setting up [Browser Panel](https://docs.qgis.org/2.18/en/docs/user_manual/managing_data_source/opening_data.html?highlight=browser#the-browser-panel):** Adding our repository as a favorite location
 2. **Loading XXX.geojson:** Simply drag and drop the file to the map view section
-3. **Exploring the data set behind the map:** Open the *[attribute table](https://docs.qgis.org/2.18/en/docs/user_manual/working_with_vector/attribute_table.html)* ![](img/icon_open_table.png) and explore the fields and values
-4. **Map navigation:** Simple zooming ![](img/icon_zoom.png) and panning ![](img/icon_pan.png). Zooming to extend, zooming to individual features.
-5. **Exploring map features:** Using the *Identify Features* ![](img/icon_identify_feature.png) functionality
+3. **Exploring the data set behind the map:** Open the *[attribute table](https://docs.qgis.org/2.18/en/docs/user_manual/working_with_vector/attribute_table.html)* ![](./img/1_quickstart/icon_open_table.png) and explore the fields and values
+4. **Map navigation:** Simple zooming ![](./img/1_quickstart/icon_zoom.png) and panning ![](./img/1_quickstart/icon_pan.png). Zooming to extend, zooming to individual features.
+5. **Exploring map features:** Using the *Identify Features* ![](./img/1_quickstart/icon_identify_feature.png) functionality
 6. **Layer Handling:** Adding XXX.geojson. Showing Layer drawing order, hide and show, grouping.
 7. **Layer Styling:** Using the [layer styling panel](https://docs.qgis.org/2.18/en/docs/user_manual/introduction/general_tools.html#layer-styling-panel). Quickly demonstrating how to style features and add labels.
-8. **Print Composer ![](img/icon_print_composer.png):** That's where you'll export maps (not part of the workshop)
+8. **Print Composer ![](./img/1_quickstart/icon_print_composer.png):** That's where you'll export maps (not part of the workshop)
 
 
 ## Chapter 2: File formats (15 min)
