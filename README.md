@@ -31,14 +31,55 @@ Explaing the main user interface components as described in the official [QGIS d
 
 
 ## Chapter 2: File formats (15 min)
-*Wir sollten ganz kurz erklären, was der Unterschied zwischen Raster- und Vektordaten ist. Am besten anhand von Beispielen/Beispielabbildungen*
 
-*Datentypen, die einem als Datenjournalist häufiger begegnen und wie man sie in QGIS einlädt. Beispiele in einen Repository-Unterordner packen und dann live vorführen*
-- shapefile
+### Raster and vector data
+Boradly speaking, geospatial data can be separated in **raster data** and **vector data**.
+
+**Raster data** is like a picture, where each pixel has a value that either represents a color (like in ordinary pictures) or a value like height (elevation data). If you zoom in close enough, raster data will look pixelated.
+![](./img/2_file_formats/type_raster.jpg)
+
+**Vector data** consists of points, lines and polygons, which means, no matter how far you'll zoom in, you won't see any pixels. Each feature usually has attributes, called properties, that indicate things like area name, how many people live in the given area, election result, etc. 
+![](./img/2_file_formats/type_vector.png)
+
+*For a more detailled, but still brief, explanation see [mapshool.io](https://mapschool.io/#raster). This is where these images are from, too.*
+
+### Shapefiles
+This is the file formt you'll probably encounter most often. To explore an example, use the QGIS Browser pane and simply drag and drop */data/shp/ne_110m_admin_0_countries/ne_110m_admin_0_countries.shp* onto the map pane. Quickly explore the data set by zooming and opening the attribute table.
+![](./img/2_file_formats/load_shp.jpg)
+
+Easy, right? But what do you see, when you explore the content of the */data/shp/ne_110m_admin_0_countries/* folder?
+There is more than one file. **Actually a shape file consists of at least three separate files:**
+* .shp (where actual geometry data resides)
+* .shx (an index enabling faster searches)
+* .dbf (a database file containing all the data associated with a geometry of the .shp file)
+* ...[optionally some more files/extensions](http://webhelp.esri.com/arcgisdesktop/9.2/index.cfm?id=2729&pid=2727&topicname=Shapefile_file_extensions)
+
+**The one thing you should always remember, when sharing or renaming shape files: Keep them all together. Zip them up before sharing.**
+
+### Geojson / Topojson
+Another file format you'll encounter frequently is geojson. Open up both, */data/shp/ne_110m_admin_0_countries/ne_110m_admin_0_countries.shp* and */data/geojson/ne_110m_admin_0_countries/ne_110m_admin_0_countries.geojson* in a text editor to see one of the most important differences.
+![](./img/2_file_formats/geojson_vs_shp.jpg)
+Not only does a geojson-file actually consist of only one file, but it's also human readable in any editor.
+There's a lot to know about geojson if you're working with it more frequently. Read about it [here](https://macwright.org/2015/03/23/geojson-second-bite.html)
+
+**One thing to remember here: geojson-files should always be saved in Web Mercator projection(EPSG:4326)**
+
+### csv or Excel file with coordinates
+More often, then you'll expect geodata comes to you in a per se non-spatial file format: csv, tsv, or Excel files that contain points and coordinates.
+One example is */data/csv/geonames_germany.csv* a csv files with all cities in Germany with over 15.000 inhabitants (source: [geonames.org](http://www.geonames.org/)). Open it up in your text editor to see what we're dealing with.
+
+Importing this file in QGIS and transforming it into a truly spatial file format can be done with a few easy steps:
+1. Use the little ![](./img/2_file_formats/icon_csv.jpg) icon (or go to Layer > Add Layer > Add Delimited Text Layer) to open up the import dialogue.
+2. Click on the three dots to the right and open *geonames_germany.csv*
+3. Set the geometry definition as shown in the screen shot, telling QGIS in which columns it'll find Latitude and Longitude as well as in which projection the data is saved.
+4. Add the file to QGIS
+![](./img/2_file_formats/load_csv.jpg)
+
+
+
 - basemap
 - WMS
 - WFS
-- xls(x) / csv with coordinates
 - geotiff
 
 
