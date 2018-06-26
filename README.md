@@ -64,7 +64,6 @@ Explaing the main user interface components as described in the official [QGIS d
 
 
 ## Chapter 4: Handling geodata properly (10 min)
-*Projektionen, Generalisierung, Dateiformate konvertieren, Geodaten editieren ohne Originaldaten zu zerschießen*
 ### Projections
 Earth is not flat, it's quite spherical. Our maps are usually flat. Projections try to somehow map earth's geography onto a plane (such as a piece of paper or a computer display).
 - https://mapschool.io/#latitude--amp--longitude
@@ -97,6 +96,21 @@ Try to avoid the Mercator or Galls-Peters projections, their distortions are qui
 - http://projectionwizard.org/ -> Then add as custom projection in QGIS
 
 ### Non-destructive display of data using filters
+Many newbies make the mistake of deleting unused data from their layers when working with geodata. This is a quite intuitive procedure but unfortunately not optimal for several reasons: Often the same layers are used in different projects. If you delete elements from the layer, they are now missing in the other projects. Another reason is the lack of flexibility when you need the deleted element again. 
+The better (and as we also find faster) way to display only a selection of data is to use filters. QGIS has powerful filter functions with which you can extract and display a subset of data from a larger data set non-destructively.
+
+In our example we want to represent the city of Münster and filter out the city of Münster via the field "gen" (municipality name): "gen"='Münster'.
+![filter_1](./img/4_handling_geodata_properly/filter_name.PNG)
+![filter_2](./img/4_handling_geodata_properly/filter_name_result.PNG)
+
+We realize that not only one but several cities in Germany are called Münster and a filter via the municipality name can quickly lead to errors. Therefore you should ALWAYS filter using the official municipality key (AGS): "ags"='05515000'.
+
+
+### Converting Geodata to different formats
+
+
+### Generalisation of geodata (simplifying geometries)
+You don't always have access to geodata in different levels of detail and you don't always need the data in the highest spatial resolution for your project. It can even be counterproductive to use very detailed data on slow computers or for use on the web. The process of simplifying geodata is called generalization. There are several tools for this process but we often use the tool http://mapshaper.org/
 
 ## Chapter 5: Answering spatial questions (15 min)
 Many people use QGIS to create good-looking static maps. But every user should be mindful that geographic INFORMATIONS systems like QGIS are primarily designed to provide answers to questions about spatial information. In the following we will address and solve these questions in a few small examples:
