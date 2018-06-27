@@ -124,7 +124,7 @@ As a research you might want to leverage the power of it all. Short of [querying
 - Single Features via Query on openstreetmap.org
 Whilst browsing the map on https://www.openstreetmap.org you can enable the Map Data display in the Layers  menu. You can then click on the geometric outlines of the features to gather more information. Careful though, only do this while you are closely zoomed in as it can fetch a LOT of data into your web browser.
 
-![OSM Map Data ](img/3_data_sources/osm_mapdata.png)
+![OSM Map Data](img/3_data_sources/osm_mapdata.png)
 
   - Regional extracts
 There is a variety of services offering regional and/or thematic extracts of OSM data. Check the table on https://wiki.openstreetmap.org/wiki/Processed_data_providers for an up-to-date list and their specific features.
@@ -135,7 +135,9 @@ The [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) allows you 
     You can make very sophisticated and complex queries using these tools. Check out this one trying to locate TODO hannes quiztime versuch
 
 - QuickOSM
-QuickOSM is a QGIS plugin that allows you to load OSM data directly into QGIS. TODO one example
+QuickOSM is a QGIS plugin that allows you to load OSM data directly into QGIS. For example load our file `data/geotiff/DGM1_2x2KM_XYZ_HH_2016-01-04 Hagenbeck.tif`, zoom to its extents, enter`tourism` as Key and `attraction` as Value in QuickOSM, click Run Query to get data on some zoo animals in that area. 🐒🐘
+
+![OSM QuickOSM](img/3_data_sources/osm_quickosm.png)
 
 - Satellite Data
   - Copernicus
