@@ -80,8 +80,32 @@ Importing this file in QGIS and transforming it into a truly spatial file format
 - basemap
 - WMS
 - WFS
-- geotiff
 
+### GeoTIFF
+GeoTIFF is a format for raster data. TIFFs are images. GeoTIFFs are images with ["Geo" metadata](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml). Each pixel can have one or multiple numeric values. In GIS these might correspond to terrain heights, phenomena values (like noise or wind) or color channels from imagery. GeoTIFF files can be lossy or losslessly compressed, can include precomputed thumbnails at various resolutions (called "pyramids" or "overviews", have very little or very high data ranges, transparent areas and much more. There are many other raster data formats but the main ideas and their handling is quite similar.
+
+If you want to learn more, the US Library of Congress compiled a [comprehensive overview on the GeoTIFF format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000279.shtml).
+
+TODO link zu gdal cheatsheet?
+
+A typical product are Digital Elevation Models, GeoTIFFs where each raster "pixel" coordinate corresponds to a fixed-size area on the ground and its value describes the elevation. These data can be visualised and analysed in many ways.
+
+For example the range of (elevation) values could be mapped linearly to a greyscale color ramp:
+
+![DEM greyscale](img/2_file_formats/dem_greyscale_minmax.jpg)
+
+Or a certain value might pivot the data into "good" and "bad":
+
+![DEM diverging](img/2_file_formats/dem_divergent_around_20.jpg)
+
+Hillshading allows raster data to be shaded "as if the sun was shining on it":
+
+![DEM hillshading](img/2_file_formats/dem_hillshading.jpg)
+
+In the case of multiple values per pixel, these can be shaded individually and blended together. This technique is used for example for earth observation like aerial or satellite imagery. Each "band" of pixel values corresponds to a certain sensor. Combining those into an RGB image possible e.g. via QGIS' Merge tool.
+
+![Single RGB Bands](img/2_file_formats/geotiff_sentinel_bands.jpg)
+![Multiband](img/2_file_formats/geotiff_sentinel_multiband.jpg)
 
 ## Chapter 3: Data sources (10 min)
 *Hier die häufigsten / nützlichsten Quellen für Datenjournalisten (in Deutschland) aufführen und im Workshop ausschnittsweise zeigen. Am besten thematisch sortiert à la: administrative Grenzen, Luftbilder,OSM...*
