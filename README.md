@@ -113,11 +113,30 @@ In the case of multiple values per pixel, these can be shaded individually and b
 - Natural Earth http://www.naturalearthdata.com/
 - BKG http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_user_id=0 
 - TPHH http://suche.transparenz.hamburg.de/ & http://suche.transparenz.hamburg.de/?extras_registerobject_type=geodat
-- OSM
-  - Einzelne Features (via Query auf osm.org)
-  - Regionale Extrakte
-  - Overpass(-Turbo)
-  - QuickOSM
+### OSM
+"OpenStreetMap (OSM) is a collaborative project to create a free editable map of the world" says [Wikipedia](https://en.wikipedia.org/wiki/OpenStreetMap). "OpenStreetMap is built by a community of mappers that contribute and maintain data about roads, trails, cafés, railway stations, and much more, all over the world" says https://www.openstreetmap.org/about
+
+You might know the map on https://www.openstreetmap.org/ but that's just one representation of some of the data that is available in the huge OpenStreetMap database.
+As a research you might want to leverage the power of it all. Short of [querying](https://wiki.openstreetmap.org/wiki/Osmosis#Example_usage) your own [local copy of the OSM database](https://planet.osm.org/) (and yes, you can *totally* do that!), there is a multitude of ways for extracting specific kinds of data from OSM.
+
+- TODO Data of the current map extents via export tab
+
+- Single Features via Query on openstreetmap.org
+Whilst browsing the map on https://www.openstreetmap.org you can enable the Map Data display in the Layers  menu. You can then click on the geometric outlines of the features to gather more information. Careful though, only do this while you are closely zoomed in as it can fetch a LOT of data into your web browser.
+
+![OSM Map Data ](img/3_data_sources/osm_mapdata.png)
+
+  - Regional extracts
+There is a variety of services offering regional and/or thematic extracts of OSM data. Check the table on https://wiki.openstreetmap.org/wiki/Processed_data_providers for an up-to-date list and their specific features.
+
+- Overpass(-Turbo)
+The [Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API) allows you to run queries against remotely hosted OSM data. [Overpass Turbo](http://overpass-turbo.eu/) makes doing so more easy and fun by providing a graphical interface and a wizard for defining queries.
+
+    You can make very sophisticated and complex queries using these tools. Check out this one trying to locate TODO hannes quiztime versuch
+
+- QuickOSM
+QuickOSM is a QGIS plugin that allows you to load OSM data directly into QGIS. TODO one example
+
 - Satellite Data
   - Copernicus
   - Landsat
