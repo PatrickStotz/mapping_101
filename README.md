@@ -62,7 +62,7 @@ Another file format you'll encounter frequently is geojson. Open up both, */data
 Not only does a geojson-file actually consist of only one file, but it's also human readable in any editor.
 There's a lot to know about geojson if you're working with it more frequently. Read about it [here](https://macwright.org/2015/03/23/geojson-second-bite.html)
 
-**One thing to remember here: geojson-files should always be saved in Web Mercator projection(EPSG:4326)**
+**One thing to remember here: geojson-files should always be saved in WGS 84 projection (EPSG:4326)**
 
 ### csv or Excel file with coordinates
 More often, then you'll expect geodata comes to you in a per se non-spatial file format: csv, tsv, or Excel files that contain points and coordinates.
@@ -186,8 +186,9 @@ Earth is not flat, it's quite spherical. Our maps are usually flat. Projections 
 #### EPSG Codes
 The European Petroleum Survey Group Geodesy (EPSG) was a working group of European oil and gas exploration companies. She created a system of unique key numbers for map projections which are now used as a standard in the exchange of geodata. Even if there is a very large number of EPSG codes you need to know only a few codes by heart (or on a post-it) in daily use as a (European) journalist:
 
-- EPSG 4326 : WGS 84
-- EPSG 3035 : ETRS 59 / LAEA
+- EPSG 4326 : WGS 84, Longitude and Latitude
+- EPSG 3857 : Pseudo-Mercator/Web-Mercator, what Google Maps and many similar web maps use (you know, where Greenland looks as big as Africa when zoomed out)
+- EPSG 3035 : ETRS 89 / LAEA, an equal area projection for Europe
 
 #### Map of the whole world?
 - Do you need to preserve a certain property (like area or direction)?
