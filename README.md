@@ -86,7 +86,7 @@ GeoTIFF is a format for raster data. TIFFs are images. GeoTIFFs are images with 
 
 If you want to learn more, the US Library of Congress compiled a [comprehensive overview on the GeoTIFF format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000279.shtml).
 
-TODO link zu gdal cheatsheet?
+If you are not scared of the command line (and you really should not be), the [GDAL](http://www.gdal.org/) library brings a set of tools for processing raster data. There is a great cheatsheet for common tasks initiated by Derek Watkins available at https://github.com/dwtkns/gdal-cheat-sheet
 
 A typical product are Digital Elevation Models, GeoTIFFs where each raster "pixel" coordinate corresponds to a fixed-size area on the ground and its value describes the elevation. These data can be visualised and analysed in many ways.
 
