@@ -76,10 +76,25 @@ Importing this file in QGIS and transforming it into a truly spatial file format
 ![](./img/2_file_formats/load_csv.jpg)
 
 
+### basemaps
+In QGIS you've got access to a huge range of different basemaps, by different providers through the QuickMapServices-Plugin.
+Let's quickly add a simple basemap in order to check out if the points we've just added by csv import are positioned correclty.
+Navigato to Web > QuickMapServices > OSM > OSM Standard.
 
-- basemap
-- WMS
-- WFS
+This adds a basic OpenStreetMap layer to our map. By default, the layer is drawn at the bottom of the drawing order (anything else would be stupid for a background layer).
+Using the provided samle data, the points should be positioned correctly.
+![](./img/2_file_formats/load_basemap.jpg)
+
+**If your trying to load data for Germany and you end up with geometries close to the Horn of Africa, then you've confused latiitude and longitude.**
+
+**If you data is at the equator, west of Africe, then your features seem to be close to [Null Island](https://en.wikipedia.org/wiki/Null_Island).**
+
+We all went through this. The only thing that matters is knowing what your mistakes are and how to do it right.
+
+
+### WMS/WFS
+Yes, they probably should be in this tutorial too. We just didn't have enough time. Might add them later.
+
 
 ### GeoTIFF
 GeoTIFF is a format for raster data. TIFFs are images. GeoTIFFs are images with ["Geo" metadata](https://www.loc.gov/preservation/digital/formats/content/tiff_tags.shtml). Each pixel can have one or multiple numeric values. In GIS these might correspond to terrain heights, phenomena values (like noise or wind) or color channels from imagery. GeoTIFF files can be lossy or losslessly compressed, can include precomputed thumbnails at various resolutions (called "pyramids" or "overviews", have very little or very high data ranges, transparent areas and much more. There are many other raster data formats but the main ideas and their handling is quite similar.
