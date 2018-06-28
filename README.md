@@ -110,7 +110,18 @@ In the case of multiple values per pixel, these can be shaded individually and b
 ## Chapter 3: Data sources (10 min)
 *Hier die häufigsten / nützlichsten Quellen für Datenjournalisten (in Deutschland) aufführen und im Workshop ausschnittsweise zeigen. Am besten thematisch sortiert à la: administrative Grenzen, Luftbilder,OSM...*
 
-- Natural Earth http://www.naturalearthdata.com/
+- Natural Earth, available at http://www.naturalearthdata.com/ is *"a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales. Featuring tightly integrated vector and raster data, with Natural Earth you can make a variety of visually pleasing, well-crafted maps with cartography or GIS software."*
+
+    ![Natural Earth](img/3_data_sources/natural_earth.png)
+
+    Consisting of thematically organised map data sets like coastlines, country borders, urban areas, airports, etc, NE should be your first stop if you ever need to great a large scale map. You can use the data for anything you with, without even needing to attribute its source. Your own data is easily joined thanks to the inclusion of FIPS, ISO, UN and World Bank country identifier codes.
+
+    ![Natural Earth](img/3_data_sources/natural_earth_columns.png)
+
+    Not only does NE provide the geographic data, the features are also enhanced by a multitude of statistical data. For example for the countries you get GDP numbers, population estimates.
+
+    For beautiful cartography NE also offers manually enhanced topographic background maps as raster data.
+
 - BKG http://www.geodatenzentrum.de/geodaten/gdz_rahmen.gdz_div?gdz_spr=deu&gdz_akt_zeile=5&gdz_anz_zeile=0&gdz_user_id=0 
 - TPHH http://suche.transparenz.hamburg.de/ & http://suche.transparenz.hamburg.de/?extras_registerobject_type=geodat
 ### OSM
