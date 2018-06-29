@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.0.0-Girona" projectname="">
+<qgis projectname="" version="3.0.0-Girona">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -18,28 +18,28 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-group checked="Qt::Unchecked" name="Question_1: Surveillance in Berlin" expanded="0">
+    <layer-tree-group checked="Qt::Unchecked" expanded="0" name="Question_1: Surveillance in Berlin">
       <customproperties/>
-      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="berlin_cams berlin_kameras" source="../data/geojson/berlin_cams.geojson" id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" expanded="1">
+      <layer-tree-layer checked="Qt::Checked" id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" source="../data/geojson/berlin_cams.geojson" expanded="1" providerKey="ogr" name="berlin_cams berlin_kameras">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="berlin_governmental_area berlin_bannmeile" source="../data/geojson/berlin_governmental_area.geojson" id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40" expanded="1">
+      <layer-tree-layer checked="Qt::Checked" id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40" source="../data/geojson/berlin_governmental_area.geojson" expanded="1" providerKey="ogr" name="berlin_governmental_area berlin_bannmeile">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="berlin_governmental_area_buffered" source="../data/geojson/berlin_governmental_area_buffered.geojson" id="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848" expanded="1">
+      <layer-tree-layer checked="Qt::Checked" id="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848" source="../data/geojson/berlin_governmental_area_buffered.geojson" expanded="1" providerKey="ogr" name="berlin_governmental_area_buffered">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group checked="Qt::Unchecked" name="Question_2: New dwellings in Germany" expanded="0">
+    <layer-tree-group checked="Qt::Checked" expanded="1" name="Question_2: New dwellings in Germany">
       <customproperties/>
-      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="bautaetigkeit_2015" source="../data/csv/bautaetigkeit_2015.csv" id="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9" expanded="1">
+      <layer-tree-layer checked="Qt::Checked" id="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9" source="../data/csv/bautaetigkeit_2015.csv" expanded="1" providerKey="ogr" name="bautaetigkeit_2015">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer providerKey="ogr" checked="Qt::Checked" name="VG250_KRS" source="../data/shp/bkg2017/VG250_KRS.shp" id="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8" expanded="0">
+      <layer-tree-layer checked="Qt::Checked" id="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8" source="../data/shp/bkg2017/VG250_KRS.shp" expanded="0" providerKey="ogr" name="VG250_KRS">
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer providerKey="wms" checked="Qt::Checked" name="Positron [no labels]" source="type=xyz&amp;zmin=0&amp;zmax=20&amp;url=http://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png" id="Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa" expanded="1">
+    <layer-tree-layer checked="Qt::Checked" id="Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://a.basemaps.cartocdn.com/light_nolabels/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=20&amp;zmin=0" expanded="1" providerKey="wms" name="Positron [no labels]">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -48,15 +48,14 @@
       <item>berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40</item>
       <item>Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa</item>
       <item>VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8</item>
-      <item>bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings unit="1" intersection-snapping="0" mode="2" tolerance="12" type="1" enabled="0">
+  <snapping-settings enabled="0" type="1" unit="1" tolerance="12" mode="2" intersection-snapping="0">
     <individual-layer-settings>
-      <layer-setting tolerance="12" type="1" enabled="0" id="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848" units="1"/>
-      <layer-setting tolerance="12" type="1" enabled="0" id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" units="1"/>
-      <layer-setting tolerance="12" type="1" enabled="0" id="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8" units="1"/>
-      <layer-setting tolerance="12" type="1" enabled="0" id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40" units="1"/>
+      <layer-setting id="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8" enabled="0" type="1" units="1" tolerance="12"/>
+      <layer-setting id="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8" enabled="0" type="1" units="1" tolerance="12"/>
+      <layer-setting id="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848" enabled="0" type="1" units="1" tolerance="12"/>
+      <layer-setting id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40" enabled="0" type="1" units="1" tolerance="12"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
@@ -84,36 +83,36 @@
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
   <legend updateDrawingOrder="true">
-    <legendgroup checked="Qt::Unchecked" name="Question_1: Surveillance in Berlin" open="false">
-      <legendlayer checked="Qt::Checked" name="berlin_cams berlin_kameras" showFeatureCount="0" open="true" drawingOrder="-1">
+    <legendgroup checked="Qt::Unchecked" open="false" name="Question_1: Surveillance in Berlin">
+      <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1" name="berlin_cams berlin_kameras">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" visible="0" layerid="berlin_cams_5b697329_9d62_4336_a00a_96ae7d3f7de8"/>
         </filegroup>
       </legendlayer>
-      <legendlayer checked="Qt::Checked" name="berlin_governmental_area berlin_bannmeile" showFeatureCount="0" open="true" drawingOrder="-1">
+      <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1" name="berlin_governmental_area berlin_bannmeile">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" visible="0" layerid="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40"/>
         </filegroup>
       </legendlayer>
-      <legendlayer checked="Qt::Checked" name="berlin_governmental_area_buffered" showFeatureCount="0" open="true" drawingOrder="-1">
+      <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1" name="berlin_governmental_area_buffered">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" visible="0" layerid="berlin_governmental_area_buffered_1c71f76f_e2c4_49b3_a8dd_d2198e565848"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup checked="Qt::Unchecked" name="Question_2: New dwellings in Germany" open="false">
-      <legendlayer checked="Qt::Checked" name="bautaetigkeit_2015" showFeatureCount="0" open="true" drawingOrder="-1">
+    <legendgroup checked="Qt::Checked" open="true" name="Question_2: New dwellings in Germany">
+      <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1" name="bautaetigkeit_2015">
         <filegroup open="true" hidden="false">
-          <legendlayerfile isInOverview="0" visible="0" layerid="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9"/>
+          <legendlayerfile isInOverview="0" visible="1" layerid="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9"/>
         </filegroup>
       </legendlayer>
-      <legendlayer checked="Qt::Checked" name="VG250_KRS" showFeatureCount="0" open="false" drawingOrder="-1">
+      <legendlayer checked="Qt::Checked" open="false" showFeatureCount="0" drawingOrder="-1" name="VG250_KRS">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" visible="0" layerid="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8"/>
+          <legendlayerfile isInOverview="0" visible="1" layerid="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendlayer checked="Qt::Checked" name="Positron [no labels]" showFeatureCount="0" open="true" drawingOrder="-1">
+    <legendlayer checked="Qt::Checked" open="true" showFeatureCount="0" drawingOrder="-1" name="Positron [no labels]">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" visible="1" layerid="Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa"/>
       </filegroup>
@@ -122,7 +121,7 @@
   <mapViewDocks/>
   <mapViewDocks3D/>
   <projectlayers>
-    <maplayer hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" type="raster" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="1e+8" refreshOnNotifyEnabled="0">
+    <maplayer autoRefreshEnabled="0" type="raster" minScale="1e+8" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" maxScale="0">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278925508260727</ymin>
@@ -130,7 +129,7 @@
         <ymax>20037508.34278924390673637</ymax>
       </extent>
       <id>Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa</id>
-      <datasource>type=xyz&amp;zmin=0&amp;zmax=20&amp;url=http://a.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png</datasource>
+      <datasource>crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://a.basemaps.cartocdn.com/light_nolabels/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=20&amp;zmin=0</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -166,7 +165,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
@@ -194,13 +193,13 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast contrast="0" brightness="0"/>
-        <huesaturation colorizeStrength="100" colorizeBlue="128" colorizeGreen="128" colorizeRed="255" saturation="0" colorizeOn="0" grayscaleMode="0"/>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeBlue="128" colorizeOn="0" colorizeStrength="100" saturation="0" colorizeRed="255" grayscaleMode="0" colorizeGreen="128"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer readOnly="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyLocal="1" labelsEnabled="0" maxScale="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" simplifyMaxScale="1" simplifyDrawingHints="1" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Polygon">
+    <maplayer autoRefreshEnabled="0" simplifyDrawingTol="1" simplifyDrawingHints="1" type="vector" minScale="1e+8" simplifyMaxScale="1" refreshOnNotifyEnabled="0" readOnly="0" refreshOnNotifyMessage="" labelsEnabled="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" autoRefreshTime="0" geometry="Polygon" simplifyAlgorithm="0" maxScale="0">
       <extent>
         <xmin>280371.0591140603646636</xmin>
         <ymin>5235855.97675701789557934</ymin>
@@ -247,7 +246,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" dimensions="2" maxz="0" crs="" minx="0" miny="0" maxx="0" maxy="0"/>
+          <spatial minx="0" maxy="0" dimensions="2" maxz="0" crs="" maxx="0" minz="0" miny="0"/>
           <temporal>
             <period>
               <start></start>
@@ -268,7 +267,7 @@
       </resourceMetadata>
       <provider encoding="UTF-8">ogr</provider>
       <vectorjoins>
-        <join joinLayerId="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9" cascadedDelete="0" memoryCache="1" dynamicForm="0" upsertOnEdit="0" targetFieldName="AGS" editable="0" joinFieldName="ags"/>
+        <join dynamicForm="0" memoryCache="1" editable="0" upsertOnEdit="0" targetFieldName="AGS" joinFieldName="ags" joinLayerId="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9" cascadedDelete="0"/>
       </vectorjoins>
       <layerDependencies/>
       <dataDependencies/>
@@ -277,24 +276,24 @@
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 forceraster="0" type="graduatedSymbol" attr="bautaetigkeit_2015_wohnungen" symbollevels="0" graduatedMethod="GraduatedColor" enableorderby="0">
+      <renderer-v2 symbollevels="0" attr="bautaetigkeit_2015_wohnungen" type="graduatedSymbol" forceraster="0" graduatedMethod="GraduatedColor" enableorderby="0">
         <ranges>
-          <range upper="91.000000000000000" lower="0.000000000000000" label=" 0 - 91 " symbol="0" render="true"/>
-          <range upper="150.000000000000000" lower="91.000000000000000" label=" 91 - 150 " symbol="1" render="true"/>
-          <range upper="216.000000000000000" lower="150.000000000000000" label=" 150 - 216 " symbol="2" render="true"/>
-          <range upper="304.000000000000000" lower="216.000000000000000" label=" 216 - 304 " symbol="3" render="true"/>
-          <range upper="374.000000000000000" lower="304.000000000000000" label=" 304 - 374 " symbol="4" render="true"/>
-          <range upper="493.000000000000000" lower="374.000000000000000" label=" 374 - 493 " symbol="5" render="true"/>
-          <range upper="621.000000000000000" lower="493.000000000000000" label=" 493 - 621 " symbol="6" render="true"/>
-          <range upper="800.000000000000000" lower="621.000000000000000" label=" 621 - 800 " symbol="7" render="true"/>
-          <range upper="1108.000000000000000" lower="800.000000000000000" label=" 800 - 1108 " symbol="8" render="true"/>
-          <range upper="8704.000000000000000" lower="1108.000000000000000" label=" 1108 - 8704 " symbol="9" render="true"/>
+          <range upper="91.000000000000000" symbol="0" lower="0.000000000000000" label=" 0 - 91 " render="true"/>
+          <range upper="150.000000000000000" symbol="1" lower="91.000000000000000" label=" 91 - 150 " render="true"/>
+          <range upper="216.000000000000000" symbol="2" lower="150.000000000000000" label=" 150 - 216 " render="true"/>
+          <range upper="304.000000000000000" symbol="3" lower="216.000000000000000" label=" 216 - 304 " render="true"/>
+          <range upper="374.000000000000000" symbol="4" lower="304.000000000000000" label=" 304 - 374 " render="true"/>
+          <range upper="493.000000000000000" symbol="5" lower="374.000000000000000" label=" 374 - 493 " render="true"/>
+          <range upper="621.000000000000000" symbol="6" lower="493.000000000000000" label=" 493 - 621 " render="true"/>
+          <range upper="800.000000000000000" symbol="7" lower="621.000000000000000" label=" 621 - 800 " render="true"/>
+          <range upper="1108.000000000000000" symbol="8" lower="800.000000000000000" label=" 800 - 1108 " render="true"/>
+          <range upper="8704.000000000000000" symbol="9" lower="1108.000000000000000" label=" 1108 - 8704 " render="true"/>
         </ranges>
         <symbols>
-          <symbol name="0" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="215,25,28,255"/>
+              <prop k="color" v="255,245,240,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -306,17 +305,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="1" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="1">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="232,91,58,255"/>
+              <prop k="color" v="255,227,215,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -328,17 +327,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="2" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="2">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="249,158,89,255"/>
+              <prop k="color" v="253,198,175,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -350,17 +349,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="3" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="3">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="254,201,128,255"/>
+              <prop k="color" v="252,164,135,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -372,17 +371,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="4" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="4">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,237,170,255"/>
+              <prop k="color" v="252,129,97,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -394,17 +393,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="5" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="5">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="237,248,185,255"/>
+              <prop k="color" v="248,93,66,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -416,17 +415,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="6" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="6">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="199,233,173,255"/>
+              <prop k="color" v="235,54,42,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -438,17 +437,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="7" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="7">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="157,211,167,255"/>
+              <prop k="color" v="204,24,29,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -460,17 +459,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="8" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="8">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="100,171,176,255"/>
+              <prop k="color" v="169,15,21,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -482,17 +481,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="9" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="9">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="43,131,186,255"/>
+              <prop k="color" v="103,0,13,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -504,17 +503,17 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
         <source-symbol>
-          <symbol name="0" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="color" v="168,214,81,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -528,25 +527,25 @@
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </source-symbol>
-        <colorramp name="[source]" type="gradient">
-          <prop k="color1" v="215,25,28,255"/>
-          <prop k="color2" v="43,131,186,255"/>
+        <colorramp type="gradient" name="[source]">
+          <prop k="color1" v="255,245,240,255"/>
+          <prop k="color2" v="103,0,13,255"/>
           <prop k="discrete" v="0"/>
           <prop k="rampType" v="gradient"/>
-          <prop k="stops" v="0.25;253,174,97,255:0.5;255,255,191,255:0.75;171,221,164,255"/>
+          <prop k="stops" v="0.13;254,224,210,255:0.26;252,187,161,255:0.39;252,146,114,255:0.52;251,106,74,255:0.65;239,59,44,255:0.78;203,24,29,255:0.9;165,15,21,255"/>
         </colorramp>
         <mode name="quantile"/>
         <rotation/>
         <sizescale/>
-        <labelformat trimtrailingzeroes="false" format=" %1 - %2 " decimalplaces="0"/>
+        <labelformat decimalplaces="0" trimtrailingzeroes="false" format=" %1 - %2 "/>
       </renderer-v2>
       <customproperties>
         <property value="0" key="embeddedWidgets/count"/>
@@ -556,17 +555,18 @@
       <blendMode>6</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory maxScaleDenominator="1e+8" minScaleDenominator="0" backgroundColor="#ffffff" width="15" height="15" minimumSize="0" penAlpha="255" labelPlacementMethod="XHeight" barWidth="5" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" scaleDependency="Area" sizeType="MM" enabled="0" rotationOffset="270" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
-          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory rotationOffset="270" penWidth="0" opacity="1" backgroundColor="#ffffff" height="15" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" minScaleDenominator="0" minimumSize="0" width="15" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" labelPlacementMethod="XHeight" diagramOrientation="Up" maxScaleDenominator="1e+8" scaleBasedVisibility="0" penAlpha="255" barWidth="5" sizeType="MM" penColor="#000000" enabled="0">
+          <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" color="#000000" field=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings placement="0" priority="0" dist="0" zIndex="0" obstacle="0" showAll="1" linePlacementFlags="18">
+      <DiagramLayerSettings zIndex="0" dist="0" showAll="1" placement="0" linePlacementFlags="18" priority="0" obstacle="0">
         <properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -769,164 +769,164 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="ADE" index="0"/>
-        <alias name="" field="GF" index="1"/>
-        <alias name="" field="BSG" index="2"/>
-        <alias name="" field="RS" index="3"/>
-        <alias name="" field="AGS" index="4"/>
-        <alias name="" field="SDV_RS" index="5"/>
-        <alias name="" field="GEN" index="6"/>
-        <alias name="" field="BEZ" index="7"/>
-        <alias name="" field="IBZ" index="8"/>
-        <alias name="" field="BEM" index="9"/>
-        <alias name="" field="NBD" index="10"/>
-        <alias name="" field="SN_L" index="11"/>
-        <alias name="" field="SN_R" index="12"/>
-        <alias name="" field="SN_K" index="13"/>
-        <alias name="" field="SN_V1" index="14"/>
-        <alias name="" field="SN_V2" index="15"/>
-        <alias name="" field="SN_G" index="16"/>
-        <alias name="" field="FK_S3" index="17"/>
-        <alias name="" field="NUTS" index="18"/>
-        <alias name="" field="RS_0" index="19"/>
-        <alias name="" field="AGS_0" index="20"/>
-        <alias name="" field="WSK" index="21"/>
-        <alias name="" field="EWZ" index="22"/>
-        <alias name="" field="KFL" index="23"/>
-        <alias name="" field="DEBKG_ID" index="24"/>
-        <alias name="" field="bautaetigkeit_2015_gen" index="25"/>
-        <alias name="" field="bautaetigkeit_2015_gebaeude" index="26"/>
-        <alias name="" field="bautaetigkeit_2015_wohnungen" index="27"/>
+        <alias index="0" name="" field="ADE"/>
+        <alias index="1" name="" field="GF"/>
+        <alias index="2" name="" field="BSG"/>
+        <alias index="3" name="" field="RS"/>
+        <alias index="4" name="" field="AGS"/>
+        <alias index="5" name="" field="SDV_RS"/>
+        <alias index="6" name="" field="GEN"/>
+        <alias index="7" name="" field="BEZ"/>
+        <alias index="8" name="" field="IBZ"/>
+        <alias index="9" name="" field="BEM"/>
+        <alias index="10" name="" field="NBD"/>
+        <alias index="11" name="" field="SN_L"/>
+        <alias index="12" name="" field="SN_R"/>
+        <alias index="13" name="" field="SN_K"/>
+        <alias index="14" name="" field="SN_V1"/>
+        <alias index="15" name="" field="SN_V2"/>
+        <alias index="16" name="" field="SN_G"/>
+        <alias index="17" name="" field="FK_S3"/>
+        <alias index="18" name="" field="NUTS"/>
+        <alias index="19" name="" field="RS_0"/>
+        <alias index="20" name="" field="AGS_0"/>
+        <alias index="21" name="" field="WSK"/>
+        <alias index="22" name="" field="EWZ"/>
+        <alias index="23" name="" field="KFL"/>
+        <alias index="24" name="" field="DEBKG_ID"/>
+        <alias index="25" name="" field="bautaetigkeit_2015_gen"/>
+        <alias index="26" name="" field="bautaetigkeit_2015_gebaeude"/>
+        <alias index="27" name="" field="bautaetigkeit_2015_wohnungen"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default applyOnUpdate="0" field="ADE" expression=""/>
-        <default applyOnUpdate="0" field="GF" expression=""/>
-        <default applyOnUpdate="0" field="BSG" expression=""/>
-        <default applyOnUpdate="0" field="RS" expression=""/>
-        <default applyOnUpdate="0" field="AGS" expression=""/>
-        <default applyOnUpdate="0" field="SDV_RS" expression=""/>
-        <default applyOnUpdate="0" field="GEN" expression=""/>
-        <default applyOnUpdate="0" field="BEZ" expression=""/>
-        <default applyOnUpdate="0" field="IBZ" expression=""/>
-        <default applyOnUpdate="0" field="BEM" expression=""/>
-        <default applyOnUpdate="0" field="NBD" expression=""/>
-        <default applyOnUpdate="0" field="SN_L" expression=""/>
-        <default applyOnUpdate="0" field="SN_R" expression=""/>
-        <default applyOnUpdate="0" field="SN_K" expression=""/>
-        <default applyOnUpdate="0" field="SN_V1" expression=""/>
-        <default applyOnUpdate="0" field="SN_V2" expression=""/>
-        <default applyOnUpdate="0" field="SN_G" expression=""/>
-        <default applyOnUpdate="0" field="FK_S3" expression=""/>
-        <default applyOnUpdate="0" field="NUTS" expression=""/>
-        <default applyOnUpdate="0" field="RS_0" expression=""/>
-        <default applyOnUpdate="0" field="AGS_0" expression=""/>
-        <default applyOnUpdate="0" field="WSK" expression=""/>
-        <default applyOnUpdate="0" field="EWZ" expression=""/>
-        <default applyOnUpdate="0" field="KFL" expression=""/>
-        <default applyOnUpdate="0" field="DEBKG_ID" expression=""/>
-        <default applyOnUpdate="0" field="bautaetigkeit_2015_gen" expression=""/>
-        <default applyOnUpdate="0" field="bautaetigkeit_2015_gebaeude" expression=""/>
-        <default applyOnUpdate="0" field="bautaetigkeit_2015_wohnungen" expression=""/>
+        <default expression="" applyOnUpdate="0" field="ADE"/>
+        <default expression="" applyOnUpdate="0" field="GF"/>
+        <default expression="" applyOnUpdate="0" field="BSG"/>
+        <default expression="" applyOnUpdate="0" field="RS"/>
+        <default expression="" applyOnUpdate="0" field="AGS"/>
+        <default expression="" applyOnUpdate="0" field="SDV_RS"/>
+        <default expression="" applyOnUpdate="0" field="GEN"/>
+        <default expression="" applyOnUpdate="0" field="BEZ"/>
+        <default expression="" applyOnUpdate="0" field="IBZ"/>
+        <default expression="" applyOnUpdate="0" field="BEM"/>
+        <default expression="" applyOnUpdate="0" field="NBD"/>
+        <default expression="" applyOnUpdate="0" field="SN_L"/>
+        <default expression="" applyOnUpdate="0" field="SN_R"/>
+        <default expression="" applyOnUpdate="0" field="SN_K"/>
+        <default expression="" applyOnUpdate="0" field="SN_V1"/>
+        <default expression="" applyOnUpdate="0" field="SN_V2"/>
+        <default expression="" applyOnUpdate="0" field="SN_G"/>
+        <default expression="" applyOnUpdate="0" field="FK_S3"/>
+        <default expression="" applyOnUpdate="0" field="NUTS"/>
+        <default expression="" applyOnUpdate="0" field="RS_0"/>
+        <default expression="" applyOnUpdate="0" field="AGS_0"/>
+        <default expression="" applyOnUpdate="0" field="WSK"/>
+        <default expression="" applyOnUpdate="0" field="EWZ"/>
+        <default expression="" applyOnUpdate="0" field="KFL"/>
+        <default expression="" applyOnUpdate="0" field="DEBKG_ID"/>
+        <default expression="" applyOnUpdate="0" field="bautaetigkeit_2015_gen"/>
+        <default expression="" applyOnUpdate="0" field="bautaetigkeit_2015_gebaeude"/>
+        <default expression="" applyOnUpdate="0" field="bautaetigkeit_2015_wohnungen"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="ADE" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="GF" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="BSG" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="RS" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="AGS" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SDV_RS" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="GEN" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="BEZ" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="IBZ" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="BEM" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="NBD" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_L" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_R" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_K" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_V1" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_V2" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="SN_G" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="FK_S3" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="NUTS" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="RS_0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="AGS_0" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="WSK" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="EWZ" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="KFL" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="DEBKG_ID" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_gen" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_gebaeude" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_wohnungen" exp_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="ADE"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="GF"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="BSG"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="RS"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="AGS"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="SDV_RS"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="GEN"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="BEZ"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="IBZ"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="BEM"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="NBD"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="SN_L"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="SN_R"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="SN_K"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="SN_V1"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="SN_V2"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="SN_G"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="FK_S3"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="NUTS"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="RS_0"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="AGS_0"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="WSK"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="EWZ"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="KFL"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="DEBKG_ID"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_gen"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_gebaeude"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="bautaetigkeit_2015_wohnungen"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="ADE" desc="" exp=""/>
-        <constraint field="GF" desc="" exp=""/>
-        <constraint field="BSG" desc="" exp=""/>
-        <constraint field="RS" desc="" exp=""/>
-        <constraint field="AGS" desc="" exp=""/>
-        <constraint field="SDV_RS" desc="" exp=""/>
-        <constraint field="GEN" desc="" exp=""/>
-        <constraint field="BEZ" desc="" exp=""/>
-        <constraint field="IBZ" desc="" exp=""/>
-        <constraint field="BEM" desc="" exp=""/>
-        <constraint field="NBD" desc="" exp=""/>
-        <constraint field="SN_L" desc="" exp=""/>
-        <constraint field="SN_R" desc="" exp=""/>
-        <constraint field="SN_K" desc="" exp=""/>
-        <constraint field="SN_V1" desc="" exp=""/>
-        <constraint field="SN_V2" desc="" exp=""/>
-        <constraint field="SN_G" desc="" exp=""/>
-        <constraint field="FK_S3" desc="" exp=""/>
-        <constraint field="NUTS" desc="" exp=""/>
-        <constraint field="RS_0" desc="" exp=""/>
-        <constraint field="AGS_0" desc="" exp=""/>
-        <constraint field="WSK" desc="" exp=""/>
-        <constraint field="EWZ" desc="" exp=""/>
-        <constraint field="KFL" desc="" exp=""/>
-        <constraint field="DEBKG_ID" desc="" exp=""/>
-        <constraint field="bautaetigkeit_2015_gen" desc="" exp=""/>
-        <constraint field="bautaetigkeit_2015_gebaeude" desc="" exp=""/>
-        <constraint field="bautaetigkeit_2015_wohnungen" desc="" exp=""/>
+        <constraint exp="" desc="" field="ADE"/>
+        <constraint exp="" desc="" field="GF"/>
+        <constraint exp="" desc="" field="BSG"/>
+        <constraint exp="" desc="" field="RS"/>
+        <constraint exp="" desc="" field="AGS"/>
+        <constraint exp="" desc="" field="SDV_RS"/>
+        <constraint exp="" desc="" field="GEN"/>
+        <constraint exp="" desc="" field="BEZ"/>
+        <constraint exp="" desc="" field="IBZ"/>
+        <constraint exp="" desc="" field="BEM"/>
+        <constraint exp="" desc="" field="NBD"/>
+        <constraint exp="" desc="" field="SN_L"/>
+        <constraint exp="" desc="" field="SN_R"/>
+        <constraint exp="" desc="" field="SN_K"/>
+        <constraint exp="" desc="" field="SN_V1"/>
+        <constraint exp="" desc="" field="SN_V2"/>
+        <constraint exp="" desc="" field="SN_G"/>
+        <constraint exp="" desc="" field="FK_S3"/>
+        <constraint exp="" desc="" field="NUTS"/>
+        <constraint exp="" desc="" field="RS_0"/>
+        <constraint exp="" desc="" field="AGS_0"/>
+        <constraint exp="" desc="" field="WSK"/>
+        <constraint exp="" desc="" field="EWZ"/>
+        <constraint exp="" desc="" field="KFL"/>
+        <constraint exp="" desc="" field="DEBKG_ID"/>
+        <constraint exp="" desc="" field="bautaetigkeit_2015_gen"/>
+        <constraint exp="" desc="" field="bautaetigkeit_2015_gebaeude"/>
+        <constraint exp="" desc="" field="bautaetigkeit_2015_wohnungen"/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
         <columns>
-          <column name="ADE" type="field" width="-1" hidden="0"/>
-          <column name="GF" type="field" width="-1" hidden="0"/>
-          <column name="BSG" type="field" width="-1" hidden="0"/>
-          <column name="RS" type="field" width="-1" hidden="0"/>
-          <column name="AGS" type="field" width="-1" hidden="0"/>
-          <column name="SDV_RS" type="field" width="-1" hidden="0"/>
-          <column name="GEN" type="field" width="-1" hidden="0"/>
-          <column name="BEZ" type="field" width="-1" hidden="0"/>
-          <column name="IBZ" type="field" width="-1" hidden="0"/>
-          <column name="BEM" type="field" width="-1" hidden="0"/>
-          <column name="NBD" type="field" width="-1" hidden="0"/>
-          <column name="SN_L" type="field" width="-1" hidden="0"/>
-          <column name="SN_R" type="field" width="-1" hidden="0"/>
-          <column name="SN_K" type="field" width="-1" hidden="0"/>
-          <column name="SN_V1" type="field" width="-1" hidden="0"/>
-          <column name="SN_V2" type="field" width="-1" hidden="0"/>
-          <column name="SN_G" type="field" width="-1" hidden="0"/>
-          <column name="FK_S3" type="field" width="-1" hidden="0"/>
-          <column name="NUTS" type="field" width="-1" hidden="0"/>
-          <column name="RS_0" type="field" width="-1" hidden="0"/>
-          <column name="AGS_0" type="field" width="-1" hidden="0"/>
-          <column name="WSK" type="field" width="-1" hidden="0"/>
-          <column name="EWZ" type="field" width="-1" hidden="0"/>
-          <column name="KFL" type="field" width="-1" hidden="0"/>
-          <column name="DEBKG_ID" type="field" width="-1" hidden="0"/>
-          <column name="bautaetigkeit_2015_gen" type="field" width="-1" hidden="0"/>
-          <column name="bautaetigkeit_2015_gebaeude" type="field" width="-1" hidden="0"/>
-          <column name="bautaetigkeit_2015_wohnungen" type="field" width="-1" hidden="0"/>
-          <column type="actions" width="-1" hidden="1"/>
+          <column width="-1" type="field" hidden="0" name="ADE"/>
+          <column width="-1" type="field" hidden="0" name="GF"/>
+          <column width="-1" type="field" hidden="0" name="BSG"/>
+          <column width="-1" type="field" hidden="0" name="RS"/>
+          <column width="-1" type="field" hidden="0" name="AGS"/>
+          <column width="-1" type="field" hidden="0" name="SDV_RS"/>
+          <column width="-1" type="field" hidden="0" name="GEN"/>
+          <column width="-1" type="field" hidden="0" name="BEZ"/>
+          <column width="-1" type="field" hidden="0" name="IBZ"/>
+          <column width="-1" type="field" hidden="0" name="BEM"/>
+          <column width="-1" type="field" hidden="0" name="NBD"/>
+          <column width="-1" type="field" hidden="0" name="SN_L"/>
+          <column width="-1" type="field" hidden="0" name="SN_R"/>
+          <column width="-1" type="field" hidden="0" name="SN_K"/>
+          <column width="-1" type="field" hidden="0" name="SN_V1"/>
+          <column width="-1" type="field" hidden="0" name="SN_V2"/>
+          <column width="-1" type="field" hidden="0" name="SN_G"/>
+          <column width="-1" type="field" hidden="0" name="FK_S3"/>
+          <column width="-1" type="field" hidden="0" name="NUTS"/>
+          <column width="-1" type="field" hidden="0" name="RS_0"/>
+          <column width="-1" type="field" hidden="0" name="AGS_0"/>
+          <column width="-1" type="field" hidden="0" name="WSK"/>
+          <column width="-1" type="field" hidden="0" name="EWZ"/>
+          <column width="-1" type="field" hidden="0" name="KFL"/>
+          <column width="-1" type="field" hidden="0" name="DEBKG_ID"/>
+          <column width="-1" type="field" hidden="0" name="bautaetigkeit_2015_gen"/>
+          <column width="-1" type="field" hidden="0" name="bautaetigkeit_2015_gebaeude"/>
+          <column width="-1" type="field" hidden="0" name="bautaetigkeit_2015_wohnungen"/>
+          <column width="-1" type="actions" hidden="1"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
@@ -950,64 +950,64 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field name="ADE" editable="1"/>
-        <field name="AGS" editable="1"/>
-        <field name="AGS_0" editable="1"/>
-        <field name="BEM" editable="1"/>
-        <field name="BEZ" editable="1"/>
-        <field name="BSG" editable="1"/>
-        <field name="DEBKG_ID" editable="1"/>
-        <field name="EWZ" editable="1"/>
-        <field name="FK_S3" editable="1"/>
-        <field name="GEN" editable="1"/>
-        <field name="GF" editable="1"/>
-        <field name="IBZ" editable="1"/>
-        <field name="KFL" editable="1"/>
-        <field name="NBD" editable="1"/>
-        <field name="NUTS" editable="1"/>
-        <field name="RS" editable="1"/>
-        <field name="RS_0" editable="1"/>
-        <field name="SDV_RS" editable="1"/>
-        <field name="SN_G" editable="1"/>
-        <field name="SN_K" editable="1"/>
-        <field name="SN_L" editable="1"/>
-        <field name="SN_R" editable="1"/>
-        <field name="SN_V1" editable="1"/>
-        <field name="SN_V2" editable="1"/>
-        <field name="WSK" editable="1"/>
-        <field name="bautaetigkeit_2015_gebaeude" editable="0"/>
-        <field name="bautaetigkeit_2015_gen" editable="0"/>
-        <field name="bautaetigkeit_2015_wohnungen" editable="0"/>
+        <field editable="1" name="ADE"/>
+        <field editable="1" name="AGS"/>
+        <field editable="1" name="AGS_0"/>
+        <field editable="1" name="BEM"/>
+        <field editable="1" name="BEZ"/>
+        <field editable="1" name="BSG"/>
+        <field editable="1" name="DEBKG_ID"/>
+        <field editable="1" name="EWZ"/>
+        <field editable="1" name="FK_S3"/>
+        <field editable="1" name="GEN"/>
+        <field editable="1" name="GF"/>
+        <field editable="1" name="IBZ"/>
+        <field editable="1" name="KFL"/>
+        <field editable="1" name="NBD"/>
+        <field editable="1" name="NUTS"/>
+        <field editable="1" name="RS"/>
+        <field editable="1" name="RS_0"/>
+        <field editable="1" name="SDV_RS"/>
+        <field editable="1" name="SN_G"/>
+        <field editable="1" name="SN_K"/>
+        <field editable="1" name="SN_L"/>
+        <field editable="1" name="SN_R"/>
+        <field editable="1" name="SN_V1"/>
+        <field editable="1" name="SN_V2"/>
+        <field editable="1" name="WSK"/>
+        <field editable="0" name="bautaetigkeit_2015_gebaeude"/>
+        <field editable="0" name="bautaetigkeit_2015_gen"/>
+        <field editable="0" name="bautaetigkeit_2015_wohnungen"/>
       </editable>
       <labelOnTop>
-        <field name="ADE" labelOnTop="0"/>
-        <field name="AGS" labelOnTop="0"/>
-        <field name="AGS_0" labelOnTop="0"/>
-        <field name="BEM" labelOnTop="0"/>
-        <field name="BEZ" labelOnTop="0"/>
-        <field name="BSG" labelOnTop="0"/>
-        <field name="DEBKG_ID" labelOnTop="0"/>
-        <field name="EWZ" labelOnTop="0"/>
-        <field name="FK_S3" labelOnTop="0"/>
-        <field name="GEN" labelOnTop="0"/>
-        <field name="GF" labelOnTop="0"/>
-        <field name="IBZ" labelOnTop="0"/>
-        <field name="KFL" labelOnTop="0"/>
-        <field name="NBD" labelOnTop="0"/>
-        <field name="NUTS" labelOnTop="0"/>
-        <field name="RS" labelOnTop="0"/>
-        <field name="RS_0" labelOnTop="0"/>
-        <field name="SDV_RS" labelOnTop="0"/>
-        <field name="SN_G" labelOnTop="0"/>
-        <field name="SN_K" labelOnTop="0"/>
-        <field name="SN_L" labelOnTop="0"/>
-        <field name="SN_R" labelOnTop="0"/>
-        <field name="SN_V1" labelOnTop="0"/>
-        <field name="SN_V2" labelOnTop="0"/>
-        <field name="WSK" labelOnTop="0"/>
-        <field name="bautaetigkeit_2015_gebaeude" labelOnTop="0"/>
-        <field name="bautaetigkeit_2015_gen" labelOnTop="0"/>
-        <field name="bautaetigkeit_2015_wohnungen" labelOnTop="0"/>
+        <field labelOnTop="0" name="ADE"/>
+        <field labelOnTop="0" name="AGS"/>
+        <field labelOnTop="0" name="AGS_0"/>
+        <field labelOnTop="0" name="BEM"/>
+        <field labelOnTop="0" name="BEZ"/>
+        <field labelOnTop="0" name="BSG"/>
+        <field labelOnTop="0" name="DEBKG_ID"/>
+        <field labelOnTop="0" name="EWZ"/>
+        <field labelOnTop="0" name="FK_S3"/>
+        <field labelOnTop="0" name="GEN"/>
+        <field labelOnTop="0" name="GF"/>
+        <field labelOnTop="0" name="IBZ"/>
+        <field labelOnTop="0" name="KFL"/>
+        <field labelOnTop="0" name="NBD"/>
+        <field labelOnTop="0" name="NUTS"/>
+        <field labelOnTop="0" name="RS"/>
+        <field labelOnTop="0" name="RS_0"/>
+        <field labelOnTop="0" name="SDV_RS"/>
+        <field labelOnTop="0" name="SN_G"/>
+        <field labelOnTop="0" name="SN_K"/>
+        <field labelOnTop="0" name="SN_L"/>
+        <field labelOnTop="0" name="SN_R"/>
+        <field labelOnTop="0" name="SN_V1"/>
+        <field labelOnTop="0" name="SN_V2"/>
+        <field labelOnTop="0" name="WSK"/>
+        <field labelOnTop="0" name="bautaetigkeit_2015_gebaeude"/>
+        <field labelOnTop="0" name="bautaetigkeit_2015_gen"/>
+        <field labelOnTop="0" name="bautaetigkeit_2015_wohnungen"/>
       </labelOnTop>
       <widgets/>
       <conditionalstyles>
@@ -1018,7 +1018,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>DEBKG_ID</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer readOnly="0" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="No geometry">
+    <maplayer autoRefreshEnabled="0" type="vector" minScale="1e+8" refreshOnNotifyEnabled="0" readOnly="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" geometry="No geometry" maxScale="0">
       <id>bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9</id>
       <datasource>../data/csv/bautaetigkeit_2015.csv</datasource>
       <keywordList>
@@ -1102,38 +1102,38 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="ags" index="0"/>
-        <alias name="" field="gen" index="1"/>
-        <alias name="" field="gebaeude" index="2"/>
-        <alias name="" field="wohnungen" index="3"/>
+        <alias index="0" name="" field="ags"/>
+        <alias index="1" name="" field="gen"/>
+        <alias index="2" name="" field="gebaeude"/>
+        <alias index="3" name="" field="wohnungen"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default applyOnUpdate="0" field="ags" expression=""/>
-        <default applyOnUpdate="0" field="gen" expression=""/>
-        <default applyOnUpdate="0" field="gebaeude" expression=""/>
-        <default applyOnUpdate="0" field="wohnungen" expression=""/>
+        <default expression="" applyOnUpdate="0" field="ags"/>
+        <default expression="" applyOnUpdate="0" field="gen"/>
+        <default expression="" applyOnUpdate="0" field="gebaeude"/>
+        <default expression="" applyOnUpdate="0" field="wohnungen"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="ags" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="gen" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="gebaeude" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="wohnungen" exp_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="ags"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="gen"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="gebaeude"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="wohnungen"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="ags" desc="" exp=""/>
-        <constraint field="gen" desc="" exp=""/>
-        <constraint field="gebaeude" desc="" exp=""/>
-        <constraint field="wohnungen" desc="" exp=""/>
+        <constraint exp="" desc="" field="ags"/>
+        <constraint exp="" desc="" field="gen"/>
+        <constraint exp="" desc="" field="gebaeude"/>
+        <constraint exp="" desc="" field="wohnungen"/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
         <columns/>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
@@ -1151,7 +1151,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer readOnly="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyLocal="1" labelsEnabled="0" maxScale="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" simplifyMaxScale="1" simplifyDrawingHints="0" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Point">
+    <maplayer autoRefreshEnabled="0" simplifyDrawingTol="1" simplifyDrawingHints="0" type="vector" minScale="1e+8" simplifyMaxScale="1" refreshOnNotifyEnabled="0" readOnly="0" refreshOnNotifyMessage="" labelsEnabled="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" autoRefreshTime="0" geometry="Point" simplifyAlgorithm="0" maxScale="0">
       <extent>
         <xmin>4549013.34955647867172956</xmin>
         <ymin>3271595.95409925328567624</ymin>
@@ -1198,7 +1198,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" dimensions="2" maxz="0" crs="" minx="0" miny="0" maxx="0" maxy="0"/>
+          <spatial minx="0" maxy="0" dimensions="2" maxz="0" crs="" maxx="0" minz="0" miny="0"/>
           <temporal>
             <period>
               <start></start>
@@ -1226,10 +1226,10 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 forceraster="0" type="singleSymbol" symbollevels="0" enableorderby="0">
+      <renderer-v2 symbollevels="0" type="singleSymbol" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" type="marker" clip_to_extent="1" alpha="1">
-            <layer class="SimpleMarker" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="marker" clip_to_extent="1" name="0">
+            <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="219,30,42,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -1250,9 +1250,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1262,9 +1262,7 @@ def my_form_open(dialog, layer, feature):
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>full_id</value>
-        </property>
+        <property value="full_id" key="dualview/previewExpressions"/>
         <property value="0" key="embeddedWidgets/count"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
@@ -1272,17 +1270,18 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory maxScaleDenominator="1e+8" minScaleDenominator="0" backgroundColor="#ffffff" width="15" height="15" minimumSize="0" penAlpha="255" labelPlacementMethod="XHeight" barWidth="5" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" scaleDependency="Area" sizeType="MM" enabled="0" rotationOffset="270" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
-          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory rotationOffset="270" penWidth="0" opacity="1" backgroundColor="#ffffff" height="15" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" minScaleDenominator="0" minimumSize="0" width="15" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" labelPlacementMethod="XHeight" diagramOrientation="Up" maxScaleDenominator="1e+8" scaleBasedVisibility="0" penAlpha="255" barWidth="5" sizeType="MM" penColor="#000000" enabled="0">
+          <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" color="#000000" field=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings placement="0" priority="0" dist="0" zIndex="0" obstacle="0" showAll="1" linePlacementFlags="18">
+      <DiagramLayerSettings zIndex="0" dist="0" showAll="1" placement="0" linePlacementFlags="18" priority="0" obstacle="0">
         <properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -1506,179 +1505,179 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="full_id" index="0"/>
-        <alias name="" field="osm_id" index="1"/>
-        <alias name="" field="osm_type" index="2"/>
-        <alias name="" field="amenity" index="3"/>
-        <alias name="" field="name" index="4"/>
-        <alias name="" field="opening_ho" index="5"/>
-        <alias name="" field="wheelchair" index="6"/>
-        <alias name="" field="man_made" index="7"/>
-        <alias name="" field="surveillan" index="8"/>
-        <alias name="" field="operator" index="9"/>
-        <alias name="" field="descriptio" index="10"/>
-        <alias name="" field="surveill_1" index="11"/>
-        <alias name="" field="surveill_2" index="12"/>
-        <alias name="" field="camera_mou" index="13"/>
-        <alias name="" field="camera_typ" index="14"/>
-        <alias name="" field="camera_dir" index="15"/>
-        <alias name="" field="height" index="16"/>
-        <alias name="" field="support" index="17"/>
-        <alias name="" field="shop" index="18"/>
-        <alias name="" field="website" index="19"/>
-        <alias name="" field="url" index="20"/>
-        <alias name="" field="url_webcam" index="21"/>
-        <alias name="" field="addr_house" index="22"/>
-        <alias name="" field="addr_city" index="23"/>
-        <alias name="" field="addr_postc" index="24"/>
-        <alias name="" field="addr_subur" index="25"/>
-        <alias name="" field="addr_count" index="26"/>
-        <alias name="" field="addr_stree" index="27"/>
-        <alias name="" field="webcam" index="28"/>
-        <alias name="" field="alt_name" index="29"/>
-        <alias name="" field="indoor" index="30"/>
+        <alias index="0" name="" field="full_id"/>
+        <alias index="1" name="" field="osm_id"/>
+        <alias index="2" name="" field="osm_type"/>
+        <alias index="3" name="" field="amenity"/>
+        <alias index="4" name="" field="name"/>
+        <alias index="5" name="" field="opening_ho"/>
+        <alias index="6" name="" field="wheelchair"/>
+        <alias index="7" name="" field="man_made"/>
+        <alias index="8" name="" field="surveillan"/>
+        <alias index="9" name="" field="operator"/>
+        <alias index="10" name="" field="descriptio"/>
+        <alias index="11" name="" field="surveill_1"/>
+        <alias index="12" name="" field="surveill_2"/>
+        <alias index="13" name="" field="camera_mou"/>
+        <alias index="14" name="" field="camera_typ"/>
+        <alias index="15" name="" field="camera_dir"/>
+        <alias index="16" name="" field="height"/>
+        <alias index="17" name="" field="support"/>
+        <alias index="18" name="" field="shop"/>
+        <alias index="19" name="" field="website"/>
+        <alias index="20" name="" field="url"/>
+        <alias index="21" name="" field="url_webcam"/>
+        <alias index="22" name="" field="addr_house"/>
+        <alias index="23" name="" field="addr_city"/>
+        <alias index="24" name="" field="addr_postc"/>
+        <alias index="25" name="" field="addr_subur"/>
+        <alias index="26" name="" field="addr_count"/>
+        <alias index="27" name="" field="addr_stree"/>
+        <alias index="28" name="" field="webcam"/>
+        <alias index="29" name="" field="alt_name"/>
+        <alias index="30" name="" field="indoor"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default applyOnUpdate="0" field="full_id" expression=""/>
-        <default applyOnUpdate="0" field="osm_id" expression=""/>
-        <default applyOnUpdate="0" field="osm_type" expression=""/>
-        <default applyOnUpdate="0" field="amenity" expression=""/>
-        <default applyOnUpdate="0" field="name" expression=""/>
-        <default applyOnUpdate="0" field="opening_ho" expression=""/>
-        <default applyOnUpdate="0" field="wheelchair" expression=""/>
-        <default applyOnUpdate="0" field="man_made" expression=""/>
-        <default applyOnUpdate="0" field="surveillan" expression=""/>
-        <default applyOnUpdate="0" field="operator" expression=""/>
-        <default applyOnUpdate="0" field="descriptio" expression=""/>
-        <default applyOnUpdate="0" field="surveill_1" expression=""/>
-        <default applyOnUpdate="0" field="surveill_2" expression=""/>
-        <default applyOnUpdate="0" field="camera_mou" expression=""/>
-        <default applyOnUpdate="0" field="camera_typ" expression=""/>
-        <default applyOnUpdate="0" field="camera_dir" expression=""/>
-        <default applyOnUpdate="0" field="height" expression=""/>
-        <default applyOnUpdate="0" field="support" expression=""/>
-        <default applyOnUpdate="0" field="shop" expression=""/>
-        <default applyOnUpdate="0" field="website" expression=""/>
-        <default applyOnUpdate="0" field="url" expression=""/>
-        <default applyOnUpdate="0" field="url_webcam" expression=""/>
-        <default applyOnUpdate="0" field="addr_house" expression=""/>
-        <default applyOnUpdate="0" field="addr_city" expression=""/>
-        <default applyOnUpdate="0" field="addr_postc" expression=""/>
-        <default applyOnUpdate="0" field="addr_subur" expression=""/>
-        <default applyOnUpdate="0" field="addr_count" expression=""/>
-        <default applyOnUpdate="0" field="addr_stree" expression=""/>
-        <default applyOnUpdate="0" field="webcam" expression=""/>
-        <default applyOnUpdate="0" field="alt_name" expression=""/>
-        <default applyOnUpdate="0" field="indoor" expression=""/>
+        <default expression="" applyOnUpdate="0" field="full_id"/>
+        <default expression="" applyOnUpdate="0" field="osm_id"/>
+        <default expression="" applyOnUpdate="0" field="osm_type"/>
+        <default expression="" applyOnUpdate="0" field="amenity"/>
+        <default expression="" applyOnUpdate="0" field="name"/>
+        <default expression="" applyOnUpdate="0" field="opening_ho"/>
+        <default expression="" applyOnUpdate="0" field="wheelchair"/>
+        <default expression="" applyOnUpdate="0" field="man_made"/>
+        <default expression="" applyOnUpdate="0" field="surveillan"/>
+        <default expression="" applyOnUpdate="0" field="operator"/>
+        <default expression="" applyOnUpdate="0" field="descriptio"/>
+        <default expression="" applyOnUpdate="0" field="surveill_1"/>
+        <default expression="" applyOnUpdate="0" field="surveill_2"/>
+        <default expression="" applyOnUpdate="0" field="camera_mou"/>
+        <default expression="" applyOnUpdate="0" field="camera_typ"/>
+        <default expression="" applyOnUpdate="0" field="camera_dir"/>
+        <default expression="" applyOnUpdate="0" field="height"/>
+        <default expression="" applyOnUpdate="0" field="support"/>
+        <default expression="" applyOnUpdate="0" field="shop"/>
+        <default expression="" applyOnUpdate="0" field="website"/>
+        <default expression="" applyOnUpdate="0" field="url"/>
+        <default expression="" applyOnUpdate="0" field="url_webcam"/>
+        <default expression="" applyOnUpdate="0" field="addr_house"/>
+        <default expression="" applyOnUpdate="0" field="addr_city"/>
+        <default expression="" applyOnUpdate="0" field="addr_postc"/>
+        <default expression="" applyOnUpdate="0" field="addr_subur"/>
+        <default expression="" applyOnUpdate="0" field="addr_count"/>
+        <default expression="" applyOnUpdate="0" field="addr_stree"/>
+        <default expression="" applyOnUpdate="0" field="webcam"/>
+        <default expression="" applyOnUpdate="0" field="alt_name"/>
+        <default expression="" applyOnUpdate="0" field="indoor"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="full_id" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="osm_id" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="osm_type" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="amenity" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="name" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="opening_ho" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="wheelchair" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="man_made" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="surveillan" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="operator" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="descriptio" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="surveill_1" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="surveill_2" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="camera_mou" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="camera_typ" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="camera_dir" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="height" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="support" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="shop" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="website" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="url" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="url_webcam" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="addr_house" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="addr_city" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="addr_postc" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="addr_subur" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="addr_count" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="addr_stree" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="webcam" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="alt_name" exp_strength="0"/>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="indoor" exp_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="full_id"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="osm_id"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="osm_type"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="amenity"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="name"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="opening_ho"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="wheelchair"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="man_made"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="surveillan"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="operator"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="descriptio"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="surveill_1"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="surveill_2"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="camera_mou"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="camera_typ"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="camera_dir"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="height"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="support"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="shop"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="website"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="url"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="url_webcam"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="addr_house"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="addr_city"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="addr_postc"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="addr_subur"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="addr_count"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="addr_stree"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="webcam"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="alt_name"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="indoor"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="full_id" desc="" exp=""/>
-        <constraint field="osm_id" desc="" exp=""/>
-        <constraint field="osm_type" desc="" exp=""/>
-        <constraint field="amenity" desc="" exp=""/>
-        <constraint field="name" desc="" exp=""/>
-        <constraint field="opening_ho" desc="" exp=""/>
-        <constraint field="wheelchair" desc="" exp=""/>
-        <constraint field="man_made" desc="" exp=""/>
-        <constraint field="surveillan" desc="" exp=""/>
-        <constraint field="operator" desc="" exp=""/>
-        <constraint field="descriptio" desc="" exp=""/>
-        <constraint field="surveill_1" desc="" exp=""/>
-        <constraint field="surveill_2" desc="" exp=""/>
-        <constraint field="camera_mou" desc="" exp=""/>
-        <constraint field="camera_typ" desc="" exp=""/>
-        <constraint field="camera_dir" desc="" exp=""/>
-        <constraint field="height" desc="" exp=""/>
-        <constraint field="support" desc="" exp=""/>
-        <constraint field="shop" desc="" exp=""/>
-        <constraint field="website" desc="" exp=""/>
-        <constraint field="url" desc="" exp=""/>
-        <constraint field="url_webcam" desc="" exp=""/>
-        <constraint field="addr_house" desc="" exp=""/>
-        <constraint field="addr_city" desc="" exp=""/>
-        <constraint field="addr_postc" desc="" exp=""/>
-        <constraint field="addr_subur" desc="" exp=""/>
-        <constraint field="addr_count" desc="" exp=""/>
-        <constraint field="addr_stree" desc="" exp=""/>
-        <constraint field="webcam" desc="" exp=""/>
-        <constraint field="alt_name" desc="" exp=""/>
-        <constraint field="indoor" desc="" exp=""/>
+        <constraint exp="" desc="" field="full_id"/>
+        <constraint exp="" desc="" field="osm_id"/>
+        <constraint exp="" desc="" field="osm_type"/>
+        <constraint exp="" desc="" field="amenity"/>
+        <constraint exp="" desc="" field="name"/>
+        <constraint exp="" desc="" field="opening_ho"/>
+        <constraint exp="" desc="" field="wheelchair"/>
+        <constraint exp="" desc="" field="man_made"/>
+        <constraint exp="" desc="" field="surveillan"/>
+        <constraint exp="" desc="" field="operator"/>
+        <constraint exp="" desc="" field="descriptio"/>
+        <constraint exp="" desc="" field="surveill_1"/>
+        <constraint exp="" desc="" field="surveill_2"/>
+        <constraint exp="" desc="" field="camera_mou"/>
+        <constraint exp="" desc="" field="camera_typ"/>
+        <constraint exp="" desc="" field="camera_dir"/>
+        <constraint exp="" desc="" field="height"/>
+        <constraint exp="" desc="" field="support"/>
+        <constraint exp="" desc="" field="shop"/>
+        <constraint exp="" desc="" field="website"/>
+        <constraint exp="" desc="" field="url"/>
+        <constraint exp="" desc="" field="url_webcam"/>
+        <constraint exp="" desc="" field="addr_house"/>
+        <constraint exp="" desc="" field="addr_city"/>
+        <constraint exp="" desc="" field="addr_postc"/>
+        <constraint exp="" desc="" field="addr_subur"/>
+        <constraint exp="" desc="" field="addr_count"/>
+        <constraint exp="" desc="" field="addr_stree"/>
+        <constraint exp="" desc="" field="webcam"/>
+        <constraint exp="" desc="" field="alt_name"/>
+        <constraint exp="" desc="" field="indoor"/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
         <columns>
-          <column name="full_id" type="field" width="-1" hidden="0"/>
-          <column name="osm_id" type="field" width="-1" hidden="0"/>
-          <column name="osm_type" type="field" width="-1" hidden="0"/>
-          <column name="amenity" type="field" width="-1" hidden="0"/>
-          <column name="name" type="field" width="-1" hidden="0"/>
-          <column name="opening_ho" type="field" width="-1" hidden="0"/>
-          <column name="wheelchair" type="field" width="-1" hidden="0"/>
-          <column name="man_made" type="field" width="-1" hidden="0"/>
-          <column name="surveillan" type="field" width="-1" hidden="0"/>
-          <column name="operator" type="field" width="-1" hidden="0"/>
-          <column name="descriptio" type="field" width="-1" hidden="0"/>
-          <column name="surveill_1" type="field" width="-1" hidden="0"/>
-          <column name="surveill_2" type="field" width="-1" hidden="0"/>
-          <column name="camera_mou" type="field" width="-1" hidden="0"/>
-          <column name="camera_typ" type="field" width="-1" hidden="0"/>
-          <column name="camera_dir" type="field" width="-1" hidden="0"/>
-          <column name="height" type="field" width="-1" hidden="0"/>
-          <column name="support" type="field" width="-1" hidden="0"/>
-          <column name="shop" type="field" width="-1" hidden="0"/>
-          <column name="website" type="field" width="-1" hidden="0"/>
-          <column name="url" type="field" width="-1" hidden="0"/>
-          <column name="url_webcam" type="field" width="-1" hidden="0"/>
-          <column name="addr_house" type="field" width="-1" hidden="0"/>
-          <column name="addr_city" type="field" width="-1" hidden="0"/>
-          <column name="addr_postc" type="field" width="-1" hidden="0"/>
-          <column name="addr_subur" type="field" width="-1" hidden="0"/>
-          <column name="addr_count" type="field" width="-1" hidden="0"/>
-          <column name="addr_stree" type="field" width="-1" hidden="0"/>
-          <column name="webcam" type="field" width="-1" hidden="0"/>
-          <column name="alt_name" type="field" width="-1" hidden="0"/>
-          <column name="indoor" type="field" width="-1" hidden="0"/>
-          <column type="actions" width="-1" hidden="1"/>
+          <column width="-1" type="field" hidden="0" name="full_id"/>
+          <column width="-1" type="field" hidden="0" name="osm_id"/>
+          <column width="-1" type="field" hidden="0" name="osm_type"/>
+          <column width="-1" type="field" hidden="0" name="amenity"/>
+          <column width="-1" type="field" hidden="0" name="name"/>
+          <column width="-1" type="field" hidden="0" name="opening_ho"/>
+          <column width="-1" type="field" hidden="0" name="wheelchair"/>
+          <column width="-1" type="field" hidden="0" name="man_made"/>
+          <column width="-1" type="field" hidden="0" name="surveillan"/>
+          <column width="-1" type="field" hidden="0" name="operator"/>
+          <column width="-1" type="field" hidden="0" name="descriptio"/>
+          <column width="-1" type="field" hidden="0" name="surveill_1"/>
+          <column width="-1" type="field" hidden="0" name="surveill_2"/>
+          <column width="-1" type="field" hidden="0" name="camera_mou"/>
+          <column width="-1" type="field" hidden="0" name="camera_typ"/>
+          <column width="-1" type="field" hidden="0" name="camera_dir"/>
+          <column width="-1" type="field" hidden="0" name="height"/>
+          <column width="-1" type="field" hidden="0" name="support"/>
+          <column width="-1" type="field" hidden="0" name="shop"/>
+          <column width="-1" type="field" hidden="0" name="website"/>
+          <column width="-1" type="field" hidden="0" name="url"/>
+          <column width="-1" type="field" hidden="0" name="url_webcam"/>
+          <column width="-1" type="field" hidden="0" name="addr_house"/>
+          <column width="-1" type="field" hidden="0" name="addr_city"/>
+          <column width="-1" type="field" hidden="0" name="addr_postc"/>
+          <column width="-1" type="field" hidden="0" name="addr_subur"/>
+          <column width="-1" type="field" hidden="0" name="addr_count"/>
+          <column width="-1" type="field" hidden="0" name="addr_stree"/>
+          <column width="-1" type="field" hidden="0" name="webcam"/>
+          <column width="-1" type="field" hidden="0" name="alt_name"/>
+          <column width="-1" type="field" hidden="0" name="indoor"/>
+          <column width="-1" type="actions" hidden="1"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
@@ -1702,70 +1701,70 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field name="addr_city" editable="1"/>
-        <field name="addr_count" editable="1"/>
-        <field name="addr_house" editable="1"/>
-        <field name="addr_postc" editable="1"/>
-        <field name="addr_stree" editable="1"/>
-        <field name="addr_subur" editable="1"/>
-        <field name="alt_name" editable="1"/>
-        <field name="amenity" editable="1"/>
-        <field name="camera_dir" editable="1"/>
-        <field name="camera_mou" editable="1"/>
-        <field name="camera_typ" editable="1"/>
-        <field name="descriptio" editable="1"/>
-        <field name="full_id" editable="1"/>
-        <field name="height" editable="1"/>
-        <field name="indoor" editable="1"/>
-        <field name="man_made" editable="1"/>
-        <field name="name" editable="1"/>
-        <field name="opening_ho" editable="1"/>
-        <field name="operator" editable="1"/>
-        <field name="osm_id" editable="1"/>
-        <field name="osm_type" editable="1"/>
-        <field name="shop" editable="1"/>
-        <field name="support" editable="1"/>
-        <field name="surveill_1" editable="1"/>
-        <field name="surveill_2" editable="1"/>
-        <field name="surveillan" editable="1"/>
-        <field name="url" editable="1"/>
-        <field name="url_webcam" editable="1"/>
-        <field name="webcam" editable="1"/>
-        <field name="website" editable="1"/>
-        <field name="wheelchair" editable="1"/>
+        <field editable="1" name="addr_city"/>
+        <field editable="1" name="addr_count"/>
+        <field editable="1" name="addr_house"/>
+        <field editable="1" name="addr_postc"/>
+        <field editable="1" name="addr_stree"/>
+        <field editable="1" name="addr_subur"/>
+        <field editable="1" name="alt_name"/>
+        <field editable="1" name="amenity"/>
+        <field editable="1" name="camera_dir"/>
+        <field editable="1" name="camera_mou"/>
+        <field editable="1" name="camera_typ"/>
+        <field editable="1" name="descriptio"/>
+        <field editable="1" name="full_id"/>
+        <field editable="1" name="height"/>
+        <field editable="1" name="indoor"/>
+        <field editable="1" name="man_made"/>
+        <field editable="1" name="name"/>
+        <field editable="1" name="opening_ho"/>
+        <field editable="1" name="operator"/>
+        <field editable="1" name="osm_id"/>
+        <field editable="1" name="osm_type"/>
+        <field editable="1" name="shop"/>
+        <field editable="1" name="support"/>
+        <field editable="1" name="surveill_1"/>
+        <field editable="1" name="surveill_2"/>
+        <field editable="1" name="surveillan"/>
+        <field editable="1" name="url"/>
+        <field editable="1" name="url_webcam"/>
+        <field editable="1" name="webcam"/>
+        <field editable="1" name="website"/>
+        <field editable="1" name="wheelchair"/>
       </editable>
       <labelOnTop>
-        <field name="addr_city" labelOnTop="0"/>
-        <field name="addr_count" labelOnTop="0"/>
-        <field name="addr_house" labelOnTop="0"/>
-        <field name="addr_postc" labelOnTop="0"/>
-        <field name="addr_stree" labelOnTop="0"/>
-        <field name="addr_subur" labelOnTop="0"/>
-        <field name="alt_name" labelOnTop="0"/>
-        <field name="amenity" labelOnTop="0"/>
-        <field name="camera_dir" labelOnTop="0"/>
-        <field name="camera_mou" labelOnTop="0"/>
-        <field name="camera_typ" labelOnTop="0"/>
-        <field name="descriptio" labelOnTop="0"/>
-        <field name="full_id" labelOnTop="0"/>
-        <field name="height" labelOnTop="0"/>
-        <field name="indoor" labelOnTop="0"/>
-        <field name="man_made" labelOnTop="0"/>
-        <field name="name" labelOnTop="0"/>
-        <field name="opening_ho" labelOnTop="0"/>
-        <field name="operator" labelOnTop="0"/>
-        <field name="osm_id" labelOnTop="0"/>
-        <field name="osm_type" labelOnTop="0"/>
-        <field name="shop" labelOnTop="0"/>
-        <field name="support" labelOnTop="0"/>
-        <field name="surveill_1" labelOnTop="0"/>
-        <field name="surveill_2" labelOnTop="0"/>
-        <field name="surveillan" labelOnTop="0"/>
-        <field name="url" labelOnTop="0"/>
-        <field name="url_webcam" labelOnTop="0"/>
-        <field name="webcam" labelOnTop="0"/>
-        <field name="website" labelOnTop="0"/>
-        <field name="wheelchair" labelOnTop="0"/>
+        <field labelOnTop="0" name="addr_city"/>
+        <field labelOnTop="0" name="addr_count"/>
+        <field labelOnTop="0" name="addr_house"/>
+        <field labelOnTop="0" name="addr_postc"/>
+        <field labelOnTop="0" name="addr_stree"/>
+        <field labelOnTop="0" name="addr_subur"/>
+        <field labelOnTop="0" name="alt_name"/>
+        <field labelOnTop="0" name="amenity"/>
+        <field labelOnTop="0" name="camera_dir"/>
+        <field labelOnTop="0" name="camera_mou"/>
+        <field labelOnTop="0" name="camera_typ"/>
+        <field labelOnTop="0" name="descriptio"/>
+        <field labelOnTop="0" name="full_id"/>
+        <field labelOnTop="0" name="height"/>
+        <field labelOnTop="0" name="indoor"/>
+        <field labelOnTop="0" name="man_made"/>
+        <field labelOnTop="0" name="name"/>
+        <field labelOnTop="0" name="opening_ho"/>
+        <field labelOnTop="0" name="operator"/>
+        <field labelOnTop="0" name="osm_id"/>
+        <field labelOnTop="0" name="osm_type"/>
+        <field labelOnTop="0" name="shop"/>
+        <field labelOnTop="0" name="support"/>
+        <field labelOnTop="0" name="surveill_1"/>
+        <field labelOnTop="0" name="surveill_2"/>
+        <field labelOnTop="0" name="surveillan"/>
+        <field labelOnTop="0" name="url"/>
+        <field labelOnTop="0" name="url_webcam"/>
+        <field labelOnTop="0" name="webcam"/>
+        <field labelOnTop="0" name="website"/>
+        <field labelOnTop="0" name="wheelchair"/>
       </labelOnTop>
       <widgets/>
       <conditionalstyles>
@@ -1776,7 +1775,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>full_id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer readOnly="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyLocal="1" labelsEnabled="0" maxScale="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" simplifyMaxScale="1" simplifyDrawingHints="1" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Polygon">
+    <maplayer autoRefreshEnabled="0" simplifyDrawingTol="1" simplifyDrawingHints="1" type="vector" minScale="1e+8" simplifyMaxScale="1" refreshOnNotifyEnabled="0" readOnly="0" refreshOnNotifyMessage="" labelsEnabled="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" autoRefreshTime="0" geometry="Polygon" simplifyAlgorithm="0" maxScale="0">
       <extent>
         <xmin>4549490.98149464000016451</xmin>
         <ymin>3272650.3542766310274601</ymin>
@@ -1823,7 +1822,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" dimensions="2" maxz="0" crs="" minx="0" miny="0" maxx="0" maxy="0"/>
+          <spatial minx="0" maxy="0" dimensions="2" maxz="0" crs="" maxx="0" minz="0" miny="0"/>
           <temporal>
             <period>
               <start></start>
@@ -1851,10 +1850,10 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 forceraster="0" type="singleSymbol" symbollevels="0" enableorderby="0">
+      <renderer-v2 symbollevels="0" type="singleSymbol" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="color" v="231,223,70,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -1868,9 +1867,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -1887,17 +1886,18 @@ def my_form_open(dialog, layer, feature):
       <blendMode>6</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory maxScaleDenominator="1e+8" minScaleDenominator="0" backgroundColor="#ffffff" width="15" height="15" minimumSize="0" penAlpha="255" labelPlacementMethod="XHeight" barWidth="5" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" scaleDependency="Area" sizeType="MM" enabled="0" rotationOffset="270" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
-          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory rotationOffset="270" penWidth="0" opacity="1" backgroundColor="#ffffff" height="15" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" minScaleDenominator="0" minimumSize="0" width="15" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" labelPlacementMethod="XHeight" diagramOrientation="Up" maxScaleDenominator="1e+8" scaleBasedVisibility="0" penAlpha="255" barWidth="5" sizeType="MM" penColor="#000000" enabled="0">
+          <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" color="#000000" field=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings placement="0" priority="0" dist="0" zIndex="0" obstacle="0" showAll="1" linePlacementFlags="18">
+      <DiagramLayerSettings zIndex="0" dist="0" showAll="1" placement="0" linePlacementFlags="18" priority="0" obstacle="0">
         <properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -1911,29 +1911,29 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
+        <alias index="0" name="" field="id"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default applyOnUpdate="0" field="id" expression=""/>
+        <default expression="" applyOnUpdate="0" field="id"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="id" exp_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="id"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" desc="" exp=""/>
+        <constraint exp="" desc="" field="id"/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
         <columns>
-          <column name="id" type="field" width="-1" hidden="0"/>
-          <column type="actions" width="-1" hidden="1"/>
+          <column width="-1" type="field" hidden="0" name="id"/>
+          <column width="-1" type="actions" hidden="1"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
@@ -1957,10 +1957,10 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field name="id" editable="1"/>
+        <field editable="1" name="id"/>
       </editable>
       <labelOnTop>
-        <field name="id" labelOnTop="0"/>
+        <field labelOnTop="0" name="id"/>
       </labelOnTop>
       <widgets/>
       <conditionalstyles>
@@ -1971,7 +1971,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>id</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer readOnly="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyLocal="1" labelsEnabled="0" maxScale="0" autoRefreshTime="0" type="vector" autoRefreshEnabled="0" refreshOnNotifyMessage="" simplifyMaxScale="1" simplifyDrawingHints="1" minScale="1e+8" refreshOnNotifyEnabled="0" geometry="Polygon">
+    <maplayer autoRefreshEnabled="0" simplifyDrawingTol="1" simplifyDrawingHints="1" type="vector" minScale="1e+8" simplifyMaxScale="1" refreshOnNotifyEnabled="0" readOnly="0" refreshOnNotifyMessage="" labelsEnabled="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" autoRefreshTime="0" geometry="Polygon" simplifyAlgorithm="0" maxScale="0">
       <extent>
         <xmin>4549540.46899973973631859</xmin>
         <ymin>3272699.87389012379571795</ymin>
@@ -2018,7 +2018,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" dimensions="2" maxz="0" crs="" minx="0" miny="0" maxx="0" maxy="0"/>
+          <spatial minx="0" maxy="0" dimensions="2" maxz="0" crs="" maxx="0" minz="0" miny="0"/>
           <temporal>
             <period>
               <start></start>
@@ -2046,10 +2046,10 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 forceraster="0" type="singleSymbol" symbollevels="0" enableorderby="0">
+      <renderer-v2 symbollevels="0" type="singleSymbol" forceraster="0" enableorderby="0">
         <symbols>
-          <symbol name="0" type="fill" clip_to_extent="1" alpha="1">
-            <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+          <symbol alpha="1" type="fill" clip_to_extent="1" name="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="color" v="20,178,251,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -2063,9 +2063,9 @@ def my_form_open(dialog, layer, feature):
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" type="QString" value=""/>
+                  <Option type="QString" value="" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" type="QString" value="collection"/>
+                  <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -2075,9 +2075,7 @@ def my_form_open(dialog, layer, feature):
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property key="dualview/previewExpressions">
-          <value>id</value>
-        </property>
+        <property value="id" key="dualview/previewExpressions"/>
         <property value="0" key="embeddedWidgets/count"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
@@ -2085,17 +2083,18 @@ def my_form_open(dialog, layer, feature):
       <blendMode>6</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory maxScaleDenominator="1e+8" minScaleDenominator="0" backgroundColor="#ffffff" width="15" height="15" minimumSize="0" penAlpha="255" labelPlacementMethod="XHeight" barWidth="5" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" backgroundAlpha="255" penWidth="0" scaleBasedVisibility="0" scaleDependency="Area" sizeType="MM" enabled="0" rotationOffset="270" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up">
-          <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory rotationOffset="270" penWidth="0" opacity="1" backgroundColor="#ffffff" height="15" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" minScaleDenominator="0" minimumSize="0" width="15" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" labelPlacementMethod="XHeight" diagramOrientation="Up" maxScaleDenominator="1e+8" scaleBasedVisibility="0" penAlpha="255" barWidth="5" sizeType="MM" penColor="#000000" enabled="0">
+          <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" color="#000000" field=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings placement="0" priority="0" dist="0" zIndex="0" obstacle="0" showAll="1" linePlacementFlags="18">
+      <DiagramLayerSettings zIndex="0" dist="0" showAll="1" placement="0" linePlacementFlags="18" priority="0" obstacle="0">
         <properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" value="" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" value="collection" name="type"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -2109,29 +2108,29 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="id" index="0"/>
+        <alias index="0" name="" field="id"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default applyOnUpdate="0" field="id" expression=""/>
+        <default expression="" applyOnUpdate="0" field="id"/>
       </defaults>
       <constraints>
-        <constraint notnull_strength="0" constraints="0" unique_strength="0" field="id" exp_strength="0"/>
+        <constraint exp_strength="0" notnull_strength="0" constraints="0" unique_strength="0" field="id"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" desc="" exp=""/>
+        <constraint exp="" desc="" field="id"/>
       </constraintExpressions>
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
         <columns>
-          <column name="id" type="field" width="-1" hidden="0"/>
-          <column type="actions" width="-1" hidden="1"/>
+          <column width="-1" type="field" hidden="0" name="id"/>
+          <column width="-1" type="actions" hidden="1"/>
         </columns>
       </attributetableconfig>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath></editforminitfilepath>
@@ -2155,10 +2154,10 @@ def my_form_open(dialog, layer, feature):
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <editable>
-        <field name="id" editable="1"/>
+        <field editable="1" name="id"/>
       </editable>
       <labelOnTop>
-        <field name="id" labelOnTop="0"/>
+        <field labelOnTop="0" name="id"/>
       </labelOnTop>
       <widgets/>
       <conditionalstyles>
@@ -2176,60 +2175,59 @@ def my_form_open(dialog, layer, feature):
     <layer id="berlin_governmental_area_e14653ea_4d50_4671_9856_6f634c6cbe40"/>
     <layer id="Positron__no_labels__f6cd2df6_6749_4fc3_ae0b_c257dc1bafaa"/>
     <layer id="VG250_KRS_add1d4ea_0364_43c6_8a7f_58ab81b55ca8"/>
-    <layer id="bautaetigkeit_2015_d3762b0d_ab97_4348_a313_043a2c06d7e9"/>
   </layerorder>
   <properties>
+    <Gui>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <Gui>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-    </Gui>
-    <Measure>
-      <Ellipsoid type="QString">WGS84</Ellipsoid>
-    </Measure>
     <PositionPrecision>
-      <Automatic type="bool">true</Automatic>
       <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
     </PositionPrecision>
-    <PAL>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-    </PAL>
     <Measurement>
       <AreaUnits type="QString"></AreaUnits>
       <DistanceUnits type="QString"></DistanceUnits>
     </Measurement>
+    <PAL>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesLine type="int">50</CandidatesLine>
+    </PAL>
   </properties>
   <visibility-presets/>
   <transformContext/>
   <Annotations/>
   <Layouts>
-    <Layout worldFileMap="{ff341240-5616-4ae9-b634-0a72169cf4ef}" name="berlin" printResolution="150" units="mm">
-      <Snapper snapToItems="1" tolerance="5" snapToGrid="0" snapToGuides="1"/>
-      <Grid resUnits="mm" offsetUnits="mm" resolution="10" offsetY="0" offsetX="0"/>
+    <Layout worldFileMap="{ff341240-5616-4ae9-b634-0a72169cf4ef}" printResolution="150" units="mm" name="berlin">
+      <Snapper snapToGuides="1" snapToItems="1" snapToGrid="0" tolerance="5"/>
+      <Grid resolution="10" offsetY="0" resUnits="mm" offsetX="0" offsetUnits="mm"/>
       <PageCollection>
-        <symbol name="" type="fill" clip_to_extent="1" alpha="1">
-          <layer class="SimpleFill" pass="0" locked="0" enabled="1">
+        <symbol alpha="1" type="fill" clip_to_extent="1" name="">
+          <layer pass="0" class="SimpleFill" enabled="1" locked="0">
             <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
             <prop k="color" v="255,255,255,255"/>
             <prop k="joinstyle" v="miter"/>
@@ -2243,22 +2241,22 @@ def my_form_open(dialog, layer, feature):
             <prop k="style" v="solid"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" type="QString" value=""/>
+                <Option type="QString" value="" name="name"/>
                 <Option name="properties"/>
-                <Option name="type" type="QString" value="collection"/>
+                <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
           </layer>
         </symbol>
-        <LayoutItem referencePoint="0" zValue="0" uuid="{155948b4-2d9d-4206-83a3-1290f3b21a92}" itemRotation="0" size="297,210,mm" templateUuid="{155948b4-2d9d-4206-83a3-1290f3b21a92}" excludeFromExports="0" outlineWidthM="0.3,mm" id="" type="65638" opacity="1" visibility="1" positionOnPage="0,0,mm" frame="false" position="0,0,mm" groupUuid="" blendMode="0" frameJoinStyle="miter" background="true" positionLock="false">
-          <FrameColor blue="0" red="0" alpha="255" green="0"/>
-          <BackgroundColor blue="255" red="255" alpha="255" green="255"/>
+        <LayoutItem frame="false" uuid="{155948b4-2d9d-4206-83a3-1290f3b21a92}" blendMode="0" opacity="1" size="297,210,mm" zValue="0" itemRotation="0" outlineWidthM="0.3,mm" positionLock="false" type="65638" visibility="1" frameJoinStyle="miter" id="" background="true" position="0,0,mm" excludeFromExports="0" templateUuid="{155948b4-2d9d-4206-83a3-1290f3b21a92}" positionOnPage="0,0,mm" groupUuid="" referencePoint="0">
+          <FrameColor green="0" blue="0" alpha="255" red="0"/>
+          <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
           <LayoutObject>
             <dataDefinedProperties>
               <Option type="Map">
-                <Option name="name" type="QString" value=""/>
+                <Option type="QString" value="" name="name"/>
                 <Option name="properties"/>
-                <Option name="type" type="QString" value="collection"/>
+                <Option type="QString" value="collection" name="type"/>
               </Option>
             </dataDefinedProperties>
             <customproperties/>
@@ -2266,22 +2264,22 @@ def my_form_open(dialog, layer, feature):
         </LayoutItem>
         <GuideCollection visible="1"/>
       </PageCollection>
-      <LayoutItem referencePoint="0" zValue="1" uuid="{ff341240-5616-4ae9-b634-0a72169cf4ef}" itemRotation="0" followPreset="false" size="297,210,mm" drawCanvasItems="true" templateUuid="{ff341240-5616-4ae9-b634-0a72169cf4ef}" excludeFromExports="0" outlineWidthM="0.3,mm" id="" type="65639" opacity="1" mapRotation="0" visibility="1" positionOnPage="0,3.55271e-15,mm" frame="false" position="0,3.55271e-15,mm" groupUuid="" blendMode="0" followPresetName="" frameJoinStyle="miter" background="true" keepLayerSet="false" positionLock="false">
-        <FrameColor blue="0" red="0" alpha="255" green="0"/>
-        <BackgroundColor blue="255" red="255" alpha="255" green="255"/>
+      <LayoutItem frame="false" uuid="{ff341240-5616-4ae9-b634-0a72169cf4ef}" followPreset="false" followPresetName="" mapRotation="0" blendMode="0" opacity="1" size="297,210,mm" drawCanvasItems="true" zValue="1" itemRotation="0" outlineWidthM="0.3,mm" positionLock="false" type="65639" visibility="1" frameJoinStyle="miter" id="" background="true" position="0,0,mm" excludeFromExports="0" templateUuid="{ff341240-5616-4ae9-b634-0a72169cf4ef}" positionOnPage="0,0,mm" keepLayerSet="false" groupUuid="" referencePoint="0">
+        <FrameColor green="0" blue="0" alpha="255" red="0"/>
+        <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
         <LayoutObject>
           <dataDefinedProperties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option type="QString" value="" name="name"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option type="QString" value="collection" name="type"/>
             </Option>
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <Extent xmax="4550700.46374732349067926" xmin="4549236.19871465396136045" ymax="3273642.59911050787195563" ymin="3272607.26019851909950376"/>
+        <Extent xmax="4550700.46374732349067926" xmin="4549236.19871465396136045" ymin="3272607.26019851909950376" ymax="3273642.59911050787195563"/>
         <LayerSet/>
-        <AtlasMap margin="0.10000000000000001" atlasDriven="0" scalingMode="2"/>
+        <AtlasMap atlasDriven="0" scalingMode="2" margin="0.10000000000000001"/>
       </LayoutItem>
       <customproperties>
         <property value="png" key="atlasRasterFormat"/>
@@ -2292,7 +2290,71 @@ def my_form_open(dialog, layer, feature):
         <property value="0" key="imageCropMarginTop"/>
         <property value="false" key="imageCropToContents"/>
       </customproperties>
-      <Atlas coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber" pageNameExpression="" enabled="0" hideCoverage="0" filterFeatures="0" sortFeatures="0"/>
+      <Atlas filterFeatures="0" sortFeatures="0" hideCoverage="0" pageNameExpression="" enabled="0" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber"/>
+    </Layout>
+    <Layout worldFileMap="{dc0c8dde-c173-483e-8251-a7e940b6a61c}" printResolution="300" units="mm" name="germany">
+      <Snapper snapToGuides="1" snapToItems="1" snapToGrid="0" tolerance="5"/>
+      <Grid resolution="10" offsetY="0" resUnits="mm" offsetX="0" offsetUnits="mm"/>
+      <PageCollection>
+        <symbol alpha="1" type="fill" clip_to_extent="1" name="">
+          <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+            <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="color" v="255,255,255,255"/>
+            <prop k="joinstyle" v="miter"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="35,35,35,255"/>
+            <prop k="outline_style" v="no"/>
+            <prop k="outline_width" v="0.26"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="style" v="solid"/>
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+          </layer>
+        </symbol>
+        <LayoutItem frame="false" uuid="{baba2a48-b21a-4247-83c9-66dcaf312802}" blendMode="0" opacity="1" size="297,210,mm" zValue="0" itemRotation="0" outlineWidthM="0.3,mm" positionLock="false" type="65638" visibility="1" frameJoinStyle="miter" id="" background="true" position="0,0,mm" excludeFromExports="0" templateUuid="{baba2a48-b21a-4247-83c9-66dcaf312802}" positionOnPage="0,0,mm" groupUuid="" referencePoint="0">
+          <FrameColor green="0" blue="0" alpha="255" red="0"/>
+          <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+          <LayoutObject>
+            <dataDefinedProperties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </dataDefinedProperties>
+            <customproperties/>
+          </LayoutObject>
+        </LayoutItem>
+        <GuideCollection visible="1"/>
+      </PageCollection>
+      <LayoutItem frame="false" uuid="{dc0c8dde-c173-483e-8251-a7e940b6a61c}" followPreset="false" followPresetName="" mapRotation="0" blendMode="0" opacity="1" size="297,210,mm" drawCanvasItems="true" zValue="1" itemRotation="0" outlineWidthM="0.3,mm" positionLock="false" type="65639" visibility="1" frameJoinStyle="miter" id="" background="true" position="0,0,mm" excludeFromExports="0" templateUuid="{dc0c8dde-c173-483e-8251-a7e940b6a61c}" positionOnPage="0,0,mm" keepLayerSet="false" groupUuid="" referencePoint="0">
+        <FrameColor green="0" blue="0" alpha="255" red="0"/>
+        <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" value="" name="name"/>
+              <Option name="properties"/>
+              <Option type="QString" value="collection" name="type"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <Extent xmax="5063966.61139804124832153" xmin="3639834.17953376099467278" ymin="2613612.69424761785194278" ymax="3620575.01980822021141648"/>
+        <LayerSet/>
+        <AtlasMap atlasDriven="0" scalingMode="2" margin="0.10000000000000001"/>
+      </LayoutItem>
+      <customproperties>
+        <property value="png" key="atlasRasterFormat"/>
+      </customproperties>
+      <Atlas filterFeatures="0" sortFeatures="0" hideCoverage="0" pageNameExpression="" enabled="0" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber"/>
     </Layout>
   </Layouts>
 </qgis>
